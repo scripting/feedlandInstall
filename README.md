@@ -2,6 +2,10 @@
 
 Instructions for setting up a FeedLand server on Ubuntu.
 
+### Under development
+
+Until this disclaimer is removed, <i>don't</i> try to follow these instructions. 
+
 ### About FeedLand
 
 I've been running a FeedLand server myself since October 2022. 
