@@ -26,12 +26,6 @@
 	
 	"urlServerHomePageSource": "http://scripting.com/code/feedland/home/index.html",
 	
-	"prefsPath": "prefs.json",
-	"docsPath": "",
-	
-	"twitterConsumerKey": "xxx",
-	"twitterConsumerSecret": "xxx",
-	
 	"githubBackup": {
 		"enabled": false,
 		"username": "mygithubaccount",

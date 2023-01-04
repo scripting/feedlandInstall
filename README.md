@@ -34,9 +34,13 @@ If you're just using it yourself it does not have to be accessible over the net.
 
 git clone https://github.com/scripting/feedlandInstall.git
 
-nano config.json -- see this page for how to edit config.json.
+mv feedlandInstall myfeedland -- if you want to rename the folder to myfeedland after downloading it
+
+cd myfeedland
 
 npm install
+
+nano config.json -- see this page for how to edit config.json.
 
 node feedland.js
 
