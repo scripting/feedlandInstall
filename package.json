@@ -1,0 +1,26 @@
+{
+	"name": "feedlandServer",
+	"version": "0.4.2",
+	"author": "Dave Winer <dave@scripting.com>",
+	"main": "feedland.js",
+	"files": [
+		"blog.js"
+		],
+	"dependencies" : {
+		"request": "*",
+		"md5": "*",
+		"sanitize-html": "*",
+		"marked": "3.0.8",
+		"daveutils": "*",
+		"davetwitter": "*",
+		"daveappserver": "*",
+		"daverss": "*",
+		"daves3": "*",
+		"nodejs-websocket": "*",
+		"davesql": "*",
+		"reallysimple": "*",
+		"davegithub": "*",
+		"feedlanddatabase": "*",
+		"opml": "*"
+		} 
+	}

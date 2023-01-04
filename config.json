@@ -1,0 +1,47 @@
+{
+	"myDomain": "mydomain.com",
+	"database": {
+		"host": "mydatabaseprovider.com",
+		"port": 40303,
+		"user": "admin",
+		"password": "xxx",
+		"charset": "utf8mb4",
+		"connectionLimit": 100,
+		"database": "feedland",
+		"debug": false
+		},
+	"port": 1452,
+	"flWebsocketEnabled": true,
+	"websocketPort": 1462,
+	
+	"flEnableNewUsers": false,
+	"maxRiverItems": 175,
+	"maxNewFeedSubscriptions": 250,
+	
+	"flUpdateFeedsInBackground": true,
+	"minSecsBetwFeedChecks": 15,
+	
+	"productName": "FeedLand",
+	"productNameForDisplay": "FeedLand",
+	
+	"urlServerHomePageSource": "http://scripting.com/code/feedland/home/index.html",
+	
+	"prefsPath": "prefs.json",
+	"docsPath": "",
+	
+	"twitterConsumerKey": "xxx",
+	"twitterConsumerSecret": "xxx",
+	
+	"githubBackup": {
+		"enabled": false,
+		"username": "mygithubaccount",
+		"password": "mygithubpassword",
+		"repo": "feedlandServer",
+		"basepath": "backups/",
+		"committer": {
+			"name": "Jane Doe",
+			"email": "jane.doe@gmail.com"
+			},
+		"message": "."
+		}
+	}
