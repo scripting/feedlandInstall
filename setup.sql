@@ -60,10 +60,6 @@ create table items (
 	ctLikes int default 0
 	);
 
-create index itemFeed on items(feedUrl);
-create index itemPubDate on items(pubDate);
-create index subscriptionsListname on subscriptions(listname);
-
 create table subscriptions (
 	listName varchar (255), 
 	feedUrl varchar (512), 
@@ -71,6 +67,10 @@ create table subscriptions (
 	whenUpdated datetime, 
 	primary key (feedUrl, listname)
 	);
+
+create index itemFeed on items(feedUrl);
+create index itemPubDate on items(pubDate);
+create index subscriptionsListname on subscriptions(listname);
 
 create table users (
 	screenname  varchar (255), 
@@ -99,9 +99,6 @@ create table users (
 	
 	primary key (screenname)
 	);
-
-alter table users add column emailAddress text;
-alter table users add column emailSecret text;
 
 create table likes (
 	listName varchar (255), 
