@@ -20,9 +20,23 @@ You can use it yourself, or share it with others. Or use both models at the same
 
 If you're just using it yourself it does not have to be accessible over the net. 
 
-### Getting started
+### Requirements
 
-You need a server that can run Node.js and has a command line where you can do simple operations.
+1. You need a server that can run Node.js and has a command line where you can do simple operations. I'll provide instructions that work on Ubuntu, but they'll probably work on other Unix systems, and can be adapted to run elsewhere. 
 
-I'll provide instructions that work on Ubuntu, but they'll probably work on other Unix systems, and can be adapted to run elsewhere. 
+2. A current Node.js install.
+
+3. A git client. 
+
+### How to
+
+<i>cd</i> to the directory you want to install FeedLand in. 
+
+git clone https://github.com/scripting/feedlandInstall.git
+
+nano config.json -- see this page for how to edit config.json.
+
+npm install
+
+node feedland.js
 
