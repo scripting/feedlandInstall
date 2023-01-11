@@ -42,7 +42,9 @@ var config = {
 		feedUpdatedCallback: "/feedupdated"
 		},
 	flRenewSubscriptions: true, //10/29/22 by DW
-	urlFeedlandApp: "http://feedland.org/" //11/10/22 by DW
+	urlFeedlandApp: "http://feedland.org/", //11/10/22 by DW
+	
+	flBackupOnStartup: false //1/9/23 by DW
 	};
 
 var whenLastDayRollover = new Date ();
@@ -179,6 +181,7 @@ function asyncAddMacroToPagetable (pagetable, theRequest, callback) { //12/2/22 
 function addMacroToPagetable (pagetable) {
 	pagetable.urlForFeeds = config.urlForFeeds;
 	pagetable.flEnableNewUsers = config.flEnableNewUsers; //12/12/22 by DW
+	pagetable.flUseTwitterIdentity = config.flUseTwitterIdentity; //1/10/23 by DW
 	
 	//12/2/22 by DW -- set up the normal case for the Facebook/Twitter metadata
 		pagetable.metaUrl = "http://feedland.org/";
@@ -193,38 +196,71 @@ function addMacroToPagetable (pagetable) {
 	
 	}
 
-function addEmailToUserInDatabase (screenname, emailAddress, magicString, callback) { //12/7/22 by DW
+function addEmailToUserInDatabase (screenname, emailAddress, magicString, flNewUser, callback) { //12/7/22 by DW
 	database.isUserInDatabase (screenname, function (flInDatabase, userRec) {
-		var emailSecret = undefined;
-		if (flInDatabase) {
-			if (userRec.emailSecret != null) {
-				emailSecret = userRec.emailSecret; 
+		if (flNewUser) { //1/7/23 by DW
+			if (flInDatabase) {
+				const message = "Can't create the user \"" + screenname + "\" because there already is a user with that name."
+				callback ({message});
 				}
-			}
-		if (emailSecret === undefined) {
-			emailSecret = utils.getRandomPassword (10);
-			function encode (s) {
-				return (davesql.encode (s));
-				}
-			const sqltext = "update users set emailAddress = " + encode (emailAddress) + ",  emailSecret = " + encode (emailSecret) + " where screenname = " + encode (screenname) + ";";
-			davesql.runSqltext (sqltext, function (err, result) {
-				if (callback !== undefined) {
-					if (err) {
-						callback (err);
-						}
-					else {
-						callback (undefined, emailSecret);
-						}
+			else {
+				if (config.flEnableNewUsers) {
+					const now = new Date ();
+					const newUserRec = {
+						screenname, 
+						emailAddress, 
+						emailSecret: utils.getRandomPassword (10),
+						whenCreated: now,
+						whenUpdated: now,
+						ctStartups: 1,
+						whenLastStartup: now
+						};
+					const sqltext = "insert into users " + davesql.encodeValues (newUserRec);
+					davesql.runSqltext (sqltext, function (err, result) {
+						if (err) {
+							callback (err);
+							}
+						else {
+							callback (undefined, newUserRec.emailSecret);
+							}
+						});
 					}
-				});
+				else {
+					const message = "Can't create the user \"" + screenname + "\" because new users are not being accepted here at this time.";
+					callback ({message});
+					}
+				}
 			}
 		else {
-			callback (undefined, emailSecret);
+			var emailSecret = undefined;
+			if (flInDatabase) {
+				if (userRec.emailSecret != null) {
+					emailSecret = userRec.emailSecret; 
+					}
+				}
+			if (emailSecret === undefined) {
+				emailSecret = utils.getRandomPassword (10);
+				function encode (s) {
+					return (davesql.encode (s));
+					}
+				const sqltext = "update users set emailAddress = " + encode (emailAddress) + ",  emailSecret = " + encode (emailSecret) + " where screenname = " + encode (screenname) + ";";
+				davesql.runSqltext (sqltext, function (err, result) {
+					if (callback !== undefined) {
+						if (err) {
+							callback (err);
+							}
+						else {
+							callback (undefined, emailSecret);
+							}
+						}
+					});
+				}
+			else {
+				callback (undefined, emailSecret);
+				}
 			}
 		});
 	}
-
-
 function regenerateEmailSecret (screenname, callback) {
 	const emailSecret = utils.getRandomPassword (10);
 	const sqltext = "update users set emailSecret = " + davesql.encode (emailSecret) + " where screenname = " + davesql.encode (screenname) + ";";
@@ -253,6 +289,23 @@ function getUserRecFromEmail (emailAddress, emailSecret, callback) { //12/13/22 
 				}
 			else {
 				callback (undefined, result [0]);
+				}
+			}
+		});
+	}
+
+function getScreenNameFromEmail (emailAddress, callback) { //1/10/23 by DW
+	const sqltext = "select * from users where emailAddress = " + davesql.encode (emailAddress) + ";";
+	davesql.runSqltext (sqltext, function (err, result) {
+		if (err) {
+			callback (err);
+			}
+		else {
+			if (result.length == 0) {
+				callback ({"message": "There is no user with that email address."});
+				}
+			else {
+				callback (undefined, result [0].screenname);
 				}
 			}
 		});
@@ -606,6 +659,16 @@ function handleHttpRequest (theRequest) {
 				case "/getfeedsearch": //12/26/22 by DW
 					database.getFeedSearch (params.searchfor, httpReturn);
 					return (true); 
+				case "/isuserindatabase": //1/6/23 by DW
+					if (params.screenname === undefined) {
+						returnData ({flInDatabase: false});
+						}
+					else {
+						database.isUserInDatabase (params.screenname, function (flInDatabase, userRec) {
+							returnData ({flInDatabase});
+							});
+						}
+					return (true); 
 				case config.rssCloud.feedUpdatedCallback: //12/12/22 by DW
 					returnPlainText (params.challenge);
 					return (true); 
@@ -624,7 +687,8 @@ var options = {
 	addMacroToPagetable, //4/30/22 by DW
 	asyncAddMacroToPagetable, //12/2/22 by DW
 	addEmailToUserInDatabase, //12/7/22 by DW
-	getScreenname //12/23/22 by DW
+	getScreenname, //12/23/22 by DW
+	getScreenNameFromEmail //1/10/23 by DW
 	}
 daveappserver.start (options, function (appConfig) {
 	for (var x in appConfig) {
@@ -633,7 +697,9 @@ daveappserver.start (options, function (appConfig) {
 	blog.start (config, function () {
 		davesql.start (config.database, function () {
 			database.start (config, function () {
-				database.backupDatabase (); //testing 
+				if (config.flBackupOnStartup) { //1/9/23 by DW
+					database.backupDatabase (); 
+					}
 				});
 			});
 		});
