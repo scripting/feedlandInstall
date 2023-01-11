@@ -8,13 +8,18 @@
 		"charset": "utf8mb4",
 		"connectionLimit": 100,
 		"database": "feedland",
-		"debug": false
+		"debug": false,
+		"flLogQueries": false,
+		"flQueueAllRequests": false
 		},
 	"port": 1452,
 	"flWebsocketEnabled": true,
 	"websocketPort": 1462,
 	
-	"flEnableNewUsers": false,
+	"flUseTwitterIdentity": false,
+	"flEnableNewUsers": true,
+	"flBackupOnStartup": false,
+	
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,
 	
