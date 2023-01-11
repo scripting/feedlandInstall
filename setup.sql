@@ -57,7 +57,8 @@ create table items (
 	flDeleted boolean, 
 	markdowntext longtext,
 	outlineJsontext text, 
-	ctLikes int default 0
+	ctLikes int default 0,
+	likes text
 	);
 
 create table subscriptions (
@@ -67,10 +68,6 @@ create table subscriptions (
 	whenUpdated datetime, 
 	primary key (feedUrl, listname)
 	);
-
-create index itemFeed on items(feedUrl);
-create index itemPubDate on items(pubDate);
-create index subscriptionsListname on subscriptions(listname);
 
 create table users (
 	screenname  varchar (255), 
@@ -107,3 +104,7 @@ create table likes (
 	whenCreated datetime, 
 	primary key (listName, itemId)
 	);
+
+create index itemFeed on items(feedUrl);
+create index itemPubDate on items(pubDate);
+create index subscriptionsListname on subscriptions(listname);
