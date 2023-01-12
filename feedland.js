@@ -204,31 +204,39 @@ function addEmailToUserInDatabase (screenname, emailAddress, magicString, flNewU
 				callback ({message});
 				}
 			else {
-				if (config.flEnableNewUsers) {
-					const now = new Date ();
-					const newUserRec = {
-						screenname, 
-						emailAddress, 
-						emailSecret: utils.getRandomPassword (10),
-						whenCreated: now,
-						whenUpdated: now,
-						ctStartups: 1,
-						whenLastStartup: now
-						};
-					const sqltext = "insert into users " + davesql.encodeValues (newUserRec);
-					davesql.runSqltext (sqltext, function (err, result) {
-						if (err) {
-							callback (err);
+				isEmailInDatabase (emailAddress, function (data) {
+					if (data.flInDatabase) {
+						const message = "Can't create the user \"" + emailAddress + "\" because there already is a user with that address."
+						callback ({message});
+						}
+					else {
+						if (config.flEnableNewUsers) {
+							const now = new Date ();
+							const newUserRec = {
+								screenname, 
+								emailAddress, 
+								emailSecret: utils.getRandomPassword (10),
+								whenCreated: now,
+								whenUpdated: now,
+								ctStartups: 1,
+								whenLastStartup: now
+								};
+							const sqltext = "insert into users " + davesql.encodeValues (newUserRec);
+							davesql.runSqltext (sqltext, function (err, result) {
+								if (err) {
+									callback (err);
+									}
+								else {
+									callback (undefined, newUserRec.emailSecret);
+									}
+								});
 							}
 						else {
-							callback (undefined, newUserRec.emailSecret);
+							const message = "Can't create the user \"" + screenname + "\" because new users are not being accepted here at this time.";
+							callback ({message});
 							}
-						});
-					}
-				else {
-					const message = "Can't create the user \"" + screenname + "\" because new users are not being accepted here at this time.";
-					callback ({message});
-					}
+						}
+					});
 				}
 			}
 		else {
@@ -309,6 +317,16 @@ function getScreenNameFromEmail (emailAddress, callback) { //1/10/23 by DW
 				}
 			}
 		});
+	}
+function isEmailInDatabase (emailAddress, callback) { //1/12/23 by DW
+	if (emailAddress === undefined) {
+		callback ({flInDatabase: false}); 
+		}
+	else {
+		getScreenNameFromEmail (emailAddress, function (err, screenname) {
+			callback ({flInDatabase: err === undefined}); //if there's no error it's in the database
+			});
+		}
 	}
 
 function getScreenname (params, callback) { //12/23/22 by DW
@@ -668,6 +686,9 @@ function handleHttpRequest (theRequest) {
 							returnData ({flInDatabase});
 							});
 						}
+					return (true); 
+				case "/isemailindatabase": //1/12/23; 11:54:04 AM by DW
+					isEmailInDatabase (params.email, returnData);
 					return (true); 
 				case config.rssCloud.feedUpdatedCallback: //12/12/22 by DW
 					returnPlainText (params.challenge);
