@@ -20,6 +20,10 @@
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,
 	
+	"urlForFeeds": "http://data.mydomain.com/feeds/",
+	"s3PathForFeeds": "/data.mydomain.com/feeds/",
+	"s3LikesPath": "/data.mydomain.com/likes/", 
+	
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,
 	
