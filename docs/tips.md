@@ -10,7 +10,7 @@ insert into users (screenname, emailAddress, emailSecret) values ('bullmancuso',
 
 On the user's machine, go to the home page of your server, open the JavaScript console and enter.
 
-localStorage.emailMemory = "{\"emailaddress\": \"bullmancuso@gmail.com\", \"code\": \"gorrilla\"}";
+localStorage.emailMemory = "{'emailaddress': 'bullmancuso@gmail.com', 'code': 'xxx', 'screenname': "bullmancuso'}";
 
 Then go to the feed list for the user.
 
