@@ -16,6 +16,10 @@
 	"flWebsocketEnabled": true,
 	"websocketPort": 1462,
 	
+	"mailSender": "bullmancuso@thefamily.org",
+	"confirmEmailSubject": "FeedLand confirmation",
+	"confirmationExpiresAfter": 3600,
+	
 	"flUseTwitterIdentity": false,
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,

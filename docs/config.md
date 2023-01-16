@@ -64,3 +64,13 @@ The number of seconds between checking for feed updates in the background. It ch
 
 Default: 15.
 
+### mailSender, confirmEmailSubject, confirmationExpiresAfter
+
+These values determine how confirmatioin emails are sent.
+
+mailSender is the email address of the sender of the emails. 
+
+confirmEmailSubject is the subject for confirmation emails.
+
+confirmationExpiresAfter is the number of seconds after which email confirmations expire. 3600, the default, is one hour. 
+
