@@ -1,0 +1,32 @@
+{
+	"productName": "newsProduct",
+	"productNameForDisplay": "NewsProduct",
+	
+	"flEnableLogin": true,
+	
+	"urlFeedlandServer": "http://my.server.com/",
+	
+	"urlServerHomePageSource": "http://scripting.com/code/riverclient/index.html",
+	
+	"prefsPath": "prefs.json",
+	"docsPath": "",
+	
+	"port": 1458,
+	"flWebsocketEnabled": true,
+	"websocketPort": 1459,
+	
+	"myDomain": "product.server.com",
+	
+	"database": {
+		"host": "mydatabaseprovider.com",
+		"port": 40303,
+		"user": "admin",
+		"password": "xxx",
+		"charset": "utf8mb4",
+		"connectionLimit": 100,
+		"database": "feedland",
+		"debug": false,
+		"flLogQueries": false,
+		"flQueueAllRequests": false
+		},
+	}
