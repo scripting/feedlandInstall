@@ -74,3 +74,7 @@ confirmEmailSubject is the subject for confirmation emails.
 
 confirmationExpiresAfter is the number of seconds after which email confirmations expire. 3600, the default, is one hour. 
 
+### urlNewsProducts
+
+The URL of the news products server you're using. 
+

@@ -20,6 +20,8 @@
 	"confirmEmailSubject": "FeedLand confirmation",
 	"confirmationExpiresAfter": 3600,
 	
+	"urlNewsProducts": "http://newsproducts.mydomain.com",
+	
 	"flUseTwitterIdentity": false,
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,
