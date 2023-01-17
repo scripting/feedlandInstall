@@ -131,8 +131,6 @@ function handleHttpRequest (theRequest) {
 					script: thePrefs.newsproductScript
 					}
 				
-				console.log ("returnUserNewsProduct: newsProductInfo == " + utils.jsonStringify (newsProductInfo));
-				
 				const pagetable = {
 					screenname, 
 					
@@ -152,6 +150,10 @@ function handleHttpRequest (theRequest) {
 					docsPath: undefined,
 					theOutlineInJson: undefined
 					}
+				
+				console.log ("returnUserNewsProduct: newsProductInfo == " + utils.jsonStringify (newsProductInfo));
+				console.log ("returnUserNewsProduct: pagetable == " + utils.jsonStringify (pagetable)); //1/17/23 by DW
+				
 				request (config.urlNewsProductSource, function (err, response, templatetext) {
 					if (!err && response.statusCode == 200) {
 						const pagetext = utils.multipleReplaceAll (templatetext.toString (), pagetable, false, "[%", "%]");
@@ -237,6 +239,7 @@ function addMacroToPagetable (pagetable, theRequest) {
 		pagetable.urlTemplate = "http://scripting.com/publicfolder/feedland/rivers/firstTabbedRiver.opml"
 		}
 	pagetable.userPrefs = "undefined"; //9/29/22 by DW
+	pagetable.urlServerForClient = config.urlFeedlandServer; //1/17/23 by DW
 	}
 function startup () {
 	readObject ("config.json", config, function () {
