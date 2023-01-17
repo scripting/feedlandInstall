@@ -182,6 +182,7 @@ function addMacroToPagetable (pagetable) {
 	pagetable.urlForFeeds = config.urlForFeeds;
 	pagetable.flEnableNewUsers = config.flEnableNewUsers; //12/12/22 by DW
 	pagetable.flUseTwitterIdentity = config.flUseTwitterIdentity; //1/10/23 by DW
+	pagetable.urlNewsProducts = config.urlNewsProducts; //1/16/23 by DW
 	
 	//12/2/22 by DW -- set up the normal case for the Facebook/Twitter metadata
 		pagetable.metaUrl = "http://feedland.org/";

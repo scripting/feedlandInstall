@@ -145,7 +145,7 @@ function handleHttpRequest (theRequest) {
 					productname: config.productName,
 					productnameForDisplay: config.productnameForDisplay,
 					version: myVersion,
-					urlServerForClient: undefined,
+					urlServerForClient: config.urlFeedlandServer, //1/16/23 by DW
 					urlWebsocketServerForClient: undefined,
 					flEnableLogin: undefined,
 					prefsPath: undefined,
