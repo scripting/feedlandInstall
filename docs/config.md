@@ -76,5 +76,5 @@ confirmationExpiresAfter is the number of seconds after which email confirmation
 
 ### urlNewsProducts
 
-The URL of the news products server you're using. 
+The URL of the <a href="https://github.com/scripting/feedlandInstall/tree/main/newsProductServer">news products server</a> you're using. 
 

@@ -24,3 +24,11 @@ You can use it yourself, or share it with others. Or use both models at the same
 
 If you're just using it yourself it does not have to be accessible over the net. 
 
+### Questions, support
+
+If your questions area about server installation and setup, post a note in <a href="https://github.com/scripting/feedlandInstall/issues">issues section</a> of this repo. 
+
+If you need help with using FeedLand, post a note in the <a href="https://github.com/scripting/feedlandSupport/issues">FeedLandSupport</a> issues section.
+
+No matter where you post it, please look to see if your question has been covered in other threads. 
+

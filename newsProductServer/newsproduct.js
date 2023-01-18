@@ -120,6 +120,9 @@ function handleHttpRequest (theRequest) {
 				returnError (err);
 				}
 			else {
+				if (thePrefs.emailSecret !== undefined) { //1/17/23 by DW
+					delete thePrefs.emailSecret;
+					}
 				console.log ("returnUserNewsProduct: thePrefs == " + utils.jsonStringify (thePrefs));
 				const newsProductInfo = {
 					screenname,
@@ -130,7 +133,6 @@ function handleHttpRequest (theRequest) {
 					style: thePrefs.newsproductStyle,
 					script: thePrefs.newsproductScript
 					}
-				
 				const pagetable = {
 					screenname, 
 					
