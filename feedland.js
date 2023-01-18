@@ -1,14 +1,14 @@
-const myVersion = "0.4.2", myProductName = "feedlandServer"; 
+const myVersion = "0.4.3", myProductName = "feedlandServer"; 
 
 const fs = require ("fs");
 const request = require ("request");
 const utils = require ("daveutils");
-const daveappserver = require ("./lib/daveappserver.js"); 
+const daveappserver = require ("daveappserver"); //9/13/22 by DW
 const davetwitter = require ("davetwitter"); 
 const davesql = require ("davesql");
 const reallysimple = require ("reallysimple");
 const opml = require ("opml");
-const database = require ("./lib/database.js"); 
+const database = require ("feedlanddatabase");
 const blog = require ("./blog.js");
 const process = require ("process"); //9/14/22 by DW
 const qs = require ("querystring"); //10/9/22 by DW

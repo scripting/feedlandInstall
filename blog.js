@@ -4,7 +4,7 @@ const utils = require ("daveutils");
 const rss = require ("daverss");
 const s3 = require ("daves3");
 const davesql = require ("davesql");
-const database = require ("./lib/database.js");
+const database = require ("feedlanddatabase");
 
 exports.updateBlogSettings = updateBlogSettings;
 exports.newPost = newPost;
