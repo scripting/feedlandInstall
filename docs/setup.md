@@ -14,7 +14,7 @@ Amazon S3 for optional features.
 
 ### Download the folder
 
-Download the folder from this repo, and copy the files into the folder you want to serve from. 
+<a href="https://github.com/scripting/feedlandInstall/archive/refs/heads/main.zip">Download the folder</a> from this repo, and copy the files into the folder you want to serve from. 
 
 Launch the terminal app on this system, cd into the directory containing the files and type:
 
