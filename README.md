@@ -16,7 +16,7 @@ I think at the beginning of 2023 we've gotten there.
 
 Hence this package.
 
-### What is this?
+### How to install
 
 When you follow <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.md">these instructions</a> you will have a FeedLand instance running on your server.
 

@@ -72,3 +72,7 @@ I've included a template for config.json, with the pieces you need to fill in to
 
 Open that file in a text editor, in the folder you're running FeedLand. It should be obvious how the data from this page maps onto the entries in config.json.
 
+### Optionally, install newsProductServer app
+
+See the instructions in the <a href="https://github.com/scripting/newsProductServer">newsProductServer</a> repo.
+

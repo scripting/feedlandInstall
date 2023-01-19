@@ -1,6 +1,6 @@
 {
 	"name": "feedlandShell",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"author": "Dave Winer <dave@scripting.com>",
 	"license": "GPLV2",
 	"main": "feedland.js",
