@@ -26,7 +26,9 @@ Note: the only files you actually need for the install are:
 
 4. config.json
 
-Launch the terminal app on this system, cd into the directory containing the files and type:
+### Install the packages
+
+Launch the terminal app on this system, <i>cd</i> into the directory containing the files and type:
 
 `npm install`
 
@@ -40,15 +42,15 @@ I use Digital Ocean's MySQL service and have been very happy with the cost, perf
 
 You will need to get the following information to add to the database section of config.json.
 
-host: The domain name of the machine running MySQL.
+* host: The domain name of the machine running MySQL.
 
-port: The port it's running on.
+* port: The port it's running on.
 
-user: The name of the user associated with the database. 
+* user: The name of the user associated with the database. 
 
-password: The user's password.
+* password: The user's password.
 
-database: The name of the database that will hold FeedLand's info.
+* database: The name of the database that will hold FeedLand's info.
 
 ### S3 setup (optional)
 
