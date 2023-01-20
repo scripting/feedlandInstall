@@ -4,7 +4,9 @@ Instructions for setting up a FeedLand server.
 
 ### Under development
 
-Until this disclaimer is removed, <i>don't</i> try to follow these instructions. 
+We will start testing the install process for FeedLand server the week of January 23, 2023. 
+
+If you have access to this site, you can try installing from the instructions, if you want. Report any problems as issues in this repo. 
 
 ### About FeedLand
 
