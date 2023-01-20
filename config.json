@@ -9,8 +9,6 @@
 	"confirmEmailSubject": "FeedLand confirmation",
 	"confirmationExpiresAfter": 3600,
 	
-	"urlNewsProducts": "http://newsproducts.mydomain.com",
-	
 	"database": {
 		"host": "mydatabaseprovider.com",
 		"port": 40303,
@@ -28,9 +26,14 @@
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,
 	
+	"flNewsProducts": false,
+	"flUserFeeds": false,
+	"flLikesFeeds": false,
+	
 	"urlForFeeds": "http://data.mydomain.com/feeds/",
 	"s3PathForFeeds": "/data.mydomain.com/feeds/",
 	"s3LikesPath": "/data.mydomain.com/likes/", 
+	"urlNewsProducts": "http://newsproducts.mydomain.com",
 	
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,

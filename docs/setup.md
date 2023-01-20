@@ -8,9 +8,9 @@ A server with Node.js installed.
 
 Access to MySQL either on the local machine or as a service running elsewhere.
 
-Amazon SES to send email for authentication.
+Amazon <a href="https://aws.amazon.com/ses/">SES</a> to send email for authentication.
 
-Amazon S3 for optional features.
+Amazon <a href="https://aws.amazon.com/s3/">S3</a> for optional features.
 
 ### Download the folder
 
@@ -54,7 +54,7 @@ You will need to get the following information to add to the database section of
 
 ### S3 setup (optional)
 
-Some features depend on using Amazon S3 to store feeds for users and likes. 
+Some features depend on using Amazon <a href="https://aws.amazon.com/s3/">S3</a> to store feeds for users and likes. 
 
 If you want to use those features, set up a place for FeedLand to store the files. 
 
@@ -70,13 +70,13 @@ The commands to create the database are in <a href="https://github.com/scripting
 
 ### Set up an Amazon SES account
 
-We use SES to send mail. At some point we will probably expand the options here.
+We use <a href="https://aws.amazon.com/ses/">SES</a> to send mail. At some point we will probably expand the options here.
 
 I'm not exactly sure how to do it. I did it myself once a few years ago, and it's worked without a hitch since then. 
 
 If someone wants to write docs on how to do this, I'd be happy to link them in here. 
 
-You will need to have a credentials.txt to provide access info to the Amazon software. 
+You will need to have a <a href="https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html">credentials.txt</a> to provide access info to the Amazon software. 
 
 ### Fill in the info in config.json
 
