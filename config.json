@@ -1,5 +1,16 @@
 {
+	"port": 1452,
+	"flWebsocketEnabled": true,
+	"websocketPort": 1462,
+	
 	"myDomain": "mydomain.com",
+	
+	"mailSender": "bullmancuso@thefamily.org",
+	"confirmEmailSubject": "FeedLand confirmation",
+	"confirmationExpiresAfter": 3600,
+	
+	"urlNewsProducts": "http://newsproducts.mydomain.com",
+	
 	"database": {
 		"host": "mydatabaseprovider.com",
 		"port": 40303,
@@ -12,15 +23,6 @@
 		"flLogQueries": false,
 		"flQueueAllRequests": false
 		},
-	"port": 1452,
-	"flWebsocketEnabled": true,
-	"websocketPort": 1462,
-	
-	"mailSender": "bullmancuso@thefamily.org",
-	"confirmEmailSubject": "FeedLand confirmation",
-	"confirmationExpiresAfter": 3600,
-	
-	"urlNewsProducts": "http://newsproducts.mydomain.com",
 	
 	"flUseTwitterIdentity": false,
 	"flEnableNewUsers": true,
