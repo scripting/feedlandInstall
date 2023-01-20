@@ -18,13 +18,13 @@ Amazon S3 for optional features.
 
 Note: the only files you actually need for the install are:
 
-1. package.json
+* package.json
 
-2. feedland.js
+* feedland.js
 
-3. emailtemplate.html
+* emailtemplate.html
 
-4. config.json
+* config.json
 
 ### Install the packages
 
