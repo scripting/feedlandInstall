@@ -18,13 +18,13 @@ Amazon <a href="https://aws.amazon.com/s3/">S3</a> for optional features.
 
 Note: the only files you actually need for the install are:
 
-* package.json
-
-* feedland.js
+* config.json
 
 * emailtemplate.html
 
-* config.json
+* feedland.js
+
+* package.json
 
 ### Install the packages
 
