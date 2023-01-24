@@ -8,7 +8,7 @@ A server with Node.js installed.
 
 Access to MySQL either on the local machine or as a service running elsewhere.
 
-Amazon <a href="https://aws.amazon.com/ses/">SES</a> to send email for authentication.
+An SMTP mail sender or an Amazon <a href="https://aws.amazon.com/ses/">SES</a> account to send email for authentication.
 
 Amazon <a href="https://aws.amazon.com/s3/">S3</a> for optional features.
 
@@ -52,6 +52,12 @@ You will need to get the following information to add to the database section of
 
 * database: The name of the database that will hold FeedLand's info.
 
+### Create your database
+
+Open a terminal window to connect to the MySQL database. 
+
+The commands to create the database are in <a href="https://github.com/scripting/feedlandInstall/blob/main/setup.sql">setup.sql</a>. Select the text from that file and paste it into the terminal window. 
+
 ### S3 setup (optional)
 
 Some features depend on using Amazon <a href="https://aws.amazon.com/s3/">S3</a> to store feeds for users and likes. 
@@ -62,13 +68,7 @@ It can be a separate bucket, or a folder within an existing bucket.
 
 The location must be accessible via HTTP.
 
-### Create your database
-
-Open a terminal window to connect to the MySQL database. 
-
-The commands to create the database are in <a href="https://github.com/scripting/feedlandInstall/blob/main/setup.sql">setup.sql</a>. Select the text from that file and paste it into the terminal window. 
-
-### Set up an Amazon SES account
+### Set up an Amazon SES account (optional)
 
 We use <a href="https://aws.amazon.com/ses/">SES</a> to send mail. At some point we will probably expand the options here.
 
@@ -78,9 +78,17 @@ If someone wants to write docs on how to do this, I'd be happy to link them in h
 
 You will need to have a <a href="https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html">credentials.txt</a> to provide access info to the Amazon software. 
 
+### Set up an SMTP mail server (optional)
+
+As of 1/24 you can now configure FeedLand to send emails via SMTP, in addition to the previously supported Amazon SES. 
+
+To configure it for SMTP, provide four new values in config.json, smtpHost, smtpPort, smtpUsername and smtpPassword.
+
+I've included these in the example config.json file and described them in the config.json docs. 
+
 ### Fill in the info in config.json
 
-I've included a template for config.json, with the pieces you need to fill in to get your FeedLand instance running. 
+I've included a template for <a href="https://github.com/scripting/feedlandInstall/blob/main/config.json">config.json</a>, with the pieces you need to fill in to get your FeedLand instance running. 
 
 Open that file in a text editor, in the folder you're running FeedLand. It should be obvious how the data from this page maps onto the entries in config.json, but here are some notes about special cases.
 
@@ -107,4 +115,14 @@ Any time you want to change what's in the emails FeedLand sends on your behalf, 
 ### Optionally, install newsProductServer app
 
 See the instructions in the <a href="https://github.com/scripting/newsProductServer">newsProductServer</a> repo.
+
+### Getting updates
+
+This is how to install new versions of the FeedLand software.
+
+Change into the directory containing feedland.js.
+
+`npm update`
+
+Quit and restart the server.
 

@@ -4,9 +4,9 @@ Instructions for setting up a FeedLand server.
 
 ### Under development
 
-We will start testing the install process for FeedLand server the week of January 23, 2023. 
+We have started testing the install process for FeedLand server as of January 24, 2023. 
 
-If you have access to this site, you can try installing from the instructions, if you want. Report any problems as issues in this repo. 
+If you have access to this site, you can try installing from the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.md">instructions</a>. Report any problems as <a href="https://github.com/scripting/feedlandInstall/issues">issues</a> in this repo. 
 
 ### About FeedLand
 
@@ -20,7 +20,7 @@ Hence this package.
 
 ### How to install
 
-When you follow <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.md">these instructions</a> you will have a FeedLand instance running on your server.
+When you follow <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.md">the setup instructions</a> you will have a FeedLand instance running on your server.
 
 You can use it yourself, or share it with others. Or use both models at the same time. 
 
@@ -61,4 +61,8 @@ If your questions area about server installation and setup, post a note in <a hr
 If you need help with using FeedLand, post a note in the <a href="https://github.com/scripting/feedlandSupport/issues">FeedLandSupport</a> issues section.
 
 No matter where you post it, please look to see if your question has been covered in other threads. 
+
+### No pull requests, please
+
+<a href="http://scripting.com/2020/05/26/194558.html?title=bugReportsNotPullRequests">Bug reports, not pull requests</a>. 
 
