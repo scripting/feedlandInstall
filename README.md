@@ -54,15 +54,19 @@ The server software is layered as a stack of Node packages that build on each ot
 
 * <a href="https://github.com/scripting/s3">daves3</a> -- reading and writing to and from Amazon S3.
 
-### Questions, support
-
-If your questions area about server installation and setup, post a note in <a href="https://github.com/scripting/feedlandInstall/issues">issues section</a> of this repo. 
-
-If you need help with using FeedLand, post a note in the <a href="https://github.com/scripting/feedlandSupport/issues">FeedLandSupport</a> issues section.
-
-No matter where you post it, please look to see if your question has been covered in other threads. 
-
 ### No pull requests, please
 
-<a href="http://scripting.com/2020/05/26/194558.html?title=bugReportsNotPullRequests">Bug reports, not pull requests</a>. 
+I write code in an outliner, and it generates the code in this repo from the outline. So what you see as source on GitHub actually isn't what I edit. I couldn't accept a pull request to the generated code. It would just be wiped out the next time I made a change to the outline and re-generated
+
+So the best thing to do when you spot a mistake is flag it as an issue in the repo, point to the code in question if that's helpful, and I'll thank you and make the fix myself.
+
+And if you want to add a feature and have it included in this distribution, post an issue and let's talk about it. ;-)
+
+### Questions, support
+
+If your questions are about server installation and setup, post a note in <a href="https://github.com/scripting/feedlandInstall/issues">issues section</a> of this repo. 
+
+If you need help with using FeedLand to manage and share feeds, post a note in the <a href="https://github.com/scripting/feedlandSupport/issues">FeedLandSupport</a> issues section.
+
+No matter where you post it, please look to see if your question has been covered in other threads, and please be <a href="http://guidelines.scripting.com/">respectful</a>. 
 
