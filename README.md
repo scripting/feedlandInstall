@@ -62,6 +62,8 @@ So the best thing to do when you spot a mistake is flag it as an issue in the re
 
 And if you want to add a feature and have it included in this distribution, post an issue and let's talk about it. ;-)
 
+BTW, if you have an outliner handy, you can read the source the way I wrote it. I always try to include a source.opml file in my projects, as I do <a href="https://github.com/scripting/feedlandInstall/blob/main/source.opml">here</a>. 
+
 ### Questions, support
 
 If your questions are about server installation and setup, post a note in <a href="https://github.com/scripting/feedlandInstall/issues">issues section</a> of this repo. 
