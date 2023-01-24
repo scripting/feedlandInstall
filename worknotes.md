@@ -2,7 +2,9 @@
 
 We now support SMTP email in addition to SES.
 
-Did a quick review of this site, and will post a note in the Issues section explaining how we start. Adding more collaborators to this now-private repo.
+Did a quick review of this site, and will post a note in the Issues section explaining how we start. 
+
+Adding more collaborators to this now-private repo.
 
 Started this Worknotes file. 
 
