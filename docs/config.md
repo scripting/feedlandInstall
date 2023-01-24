@@ -78,3 +78,33 @@ confirmationExpiresAfter is the number of seconds after which email confirmation
 
 The URL of the <a href="https://github.com/scripting/feedlandInstall/tree/main/newsProductServer">news products server</a> you're using. 
 
+### flNewsProducts
+
+If true, the server supports news products. In the client the menu item for the user's news product is enabled only if flNewsProducts is true. 
+
+The settings are still there for the categories in the news product even if flNewsProducts is false. 
+
+Default: false.
+
+### flUserFeeds 
+
+If true, the server supports user feeds. In the client two menu items are enabled only if flUserFeeds is true. 
+
+* Edit my feed
+
+* Read user feeds
+
+The settings for the user's title and description are enabled even if flUserFeeds is false. 
+
+Default: false.
+
+### flLikesFeeds 
+
+If true, the server supports feeds for likes, both for individual users and for all users of FeedLand on this server. 
+
+Default: false.
+
+### smtpHost, smtpPort, smtpUsername, smtpPassword
+
+Set these values if you want FeedLand to send confirming emails via SMTP instead of Amazon SES (the default). 
+

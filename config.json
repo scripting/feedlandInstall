@@ -5,6 +5,11 @@
 	
 	"myDomain": "mydomain.com",
 	
+	"smtpHost": "smtp.mailhost.com",
+	"smtpPort": 587,
+	"smtpUsername": "bullman",
+	"smtpPassword": "getoutahere",
+	
 	"mailSender": "bullmancuso@thefamily.org",
 	"confirmEmailSubject": "FeedLand confirmation",
 	"confirmationExpiresAfter": 3600,
