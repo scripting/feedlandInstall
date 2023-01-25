@@ -56,7 +56,7 @@ You will need to get the following information to add to the database section of
 
 Open a terminal window to connect to the MySQL database. 
 
-The commands to create the database are in <a href="https://github.com/scripting/feedlandInstall/blob/main/setup.sql">setup.sql</a>. Select the text from that file and paste it into the terminal window. 
+The commands to create the database are in <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>. Select the text from that file and paste it into the terminal window. 
 
 ### S3 setup (optional)
 
