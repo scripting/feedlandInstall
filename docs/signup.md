@@ -4,7 +4,7 @@ This is the first release of the new mechanism for creating a user account in Fe
 
 1. Enter the URL of your FeedLand instance into a browser. You should be greeted by a dialog inviting you to sign in or sign up. Click the Sign Up button.
 
-<img src="http://scripting.com/images/2023/01/25/introductoryDialog.png">
+<center><img src="http://scripting.com/images/2023/01/25/introductoryDialog.png" style="border: 1px solid silver"></center>
 
 2. A dialog appears asking you to enter a name and an email address. <a href="http://scripting.com/images/2023/01/25/signupDialog.png">Screen shot</a>. Both must be unique. The name must be at least four characters long. The dialog will tell you as you type if the name you've entered is available. Click the <i>Send</i> button. 
 
