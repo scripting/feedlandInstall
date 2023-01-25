@@ -1,3 +1,7 @@
+#### 1/25/23; 10:09:58 AM by DW
+
+Documented <i>urlStarterFeeds</i> value in config.json.
+
 #### 1/24/23; 11:42:08 AM by DW
 
 We now support SMTP email in addition to SES.

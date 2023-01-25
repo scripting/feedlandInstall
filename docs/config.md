@@ -108,3 +108,11 @@ Default: false.
 
 Set these values if you want FeedLand to send confirming emails via SMTP instead of Amazon SES (the default). 
 
+### urlStarterFeeds
+
+When a user first signs up with FeedLand, we ask if they want subscribe to a set of starter feeds.
+
+If you want to provide your own starter list for your users, set the <i>urlStarterFeeds</i> value in your config.json with the URL of your OPML subscription list. 
+
+Default: http://scripting.com/publicfolder/feedland/subscriptionLists/starterfeeds.opml
+
