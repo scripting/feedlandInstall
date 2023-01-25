@@ -108,6 +108,8 @@ Type this at the command line:
 
 To try it out, enter the value for myDomain in config.json into a web browser. That should bring up the FeedLand client, ready for you to sign up or sign in.
 
+You should then create an account for yourself using the signup process, <a href="signup.md">documented here</a>. This is the same process your users will use to create their own accounts.
+
 ### Edit emailtemplate.html
 
 Any time you want to change what's in the emails FeedLand sends on your behalf, just edit the text of this file.
