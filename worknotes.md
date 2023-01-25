@@ -1,6 +1,8 @@
 #### 1/25/23; 10:09:58 AM by DW
 
-Documented <i>urlStarterFeeds</i> value in config.json.
+<a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md#urlstarterfeeds">Documented</a> <i>urlStarterFeeds</i> value in config.json.
+
+Wrote a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/signup.md">doc</a> explaining how to sign up on your own instance. 
 
 #### 1/24/23; 11:42:08 AM by DW
 
