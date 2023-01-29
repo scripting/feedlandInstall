@@ -116,3 +116,9 @@ If you want to provide your own starter list for your users, set the <i>urlStart
 
 Default: http://scripting.com/publicfolder/feedland/subscriptionLists/starterfeeds.opml
 
+### urlFavicon
+
+You can customize the favicon of your FeedLand installation by setting urlFavicon in config.json to point to the favicon file you want to use. 
+
+Default: http://scripting.com/favicon.ico
+
