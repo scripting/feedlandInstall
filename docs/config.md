@@ -122,3 +122,15 @@ You can customize the favicon of your FeedLand installation by setting urlFavico
 
 Default: http://scripting.com/favicon.ico
 
+### urlServerForClient
+
+If you want to use HTTPS to serve FeedLand you must set this value in config.json. 
+
+The URL should begin with either // or https:// so that the FeedLand client will be able to call back to your server in accordance with the rules for HTTPS.
+
+An example, if your value for myDomain is "hello.com", this his how you would define urlServerForClient.
+
+	"urlServerForClient": "https://hello.com/"
+
+Default: http://mydomain.com/
+
