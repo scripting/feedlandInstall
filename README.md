@@ -64,7 +64,7 @@ And if you want to add a feature and have it included in this distribution, post
 
 BTW, if you have an outliner handy, you can read the source the way I wrote it. I always try to include a source.opml file in my projects, as I do <a href="https://github.com/scripting/feedlandInstall/blob/main/source.opml">here</a>. 
 
-You can read the code in source.opml by <a href="http://gitsourcereader.opml.org/?repo=http">clicking this link</a>.
+You can read the code in source.opml by <a href="http://gitsourcereader.opml.org/?repo=feedlandInstall">clicking this link</a>.
 
 ### Questions, support
 
