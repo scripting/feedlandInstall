@@ -130,7 +130,7 @@ The URL should begin with either // or https:// so that the FeedLand client will
 
 An example, if your value for myDomain is "hello.com", this his how you would define urlServerForClient.
 
-	"urlServerForClient": "https://hello.com/"
+"urlServerForClient": "https://hello.com/"
 
 Default: http://mydomain.com/
 

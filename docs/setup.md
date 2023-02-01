@@ -68,6 +68,8 @@ It can be a separate bucket, or a folder within an existing bucket.
 
 The location must be accessible via HTTP.
 
+The config values for S3 storage are: urlForFeeds, s3PathForFeeds, s3LikesPath.
+
 ### Set up an Amazon SES account (optional)
 
 We use <a href="https://aws.amazon.com/ses/">SES</a> to send mail. At some point we will probably expand the options here.
@@ -98,7 +100,9 @@ Open that file in a text editor, in the folder you're running FeedLand. It shoul
 
 * There is a set of steps for using Twitter identity, but we haven't documented them at this time. So unless you know what you're doing re Twitter identity, leave this false. 
 
-* urlForFeeds, s3PathForFeeds, s3LikesPath and urlNewsProducts are for optional features, if you don't want to host feeds for users, or make Likes subscribable, set them to the empty string.
+* urlForFeeds, s3PathForFeeds, s3LikesPath and urlNewsProducts are for optional features, if you don't want to host feeds for users, or make Likes subscribable, set them to the empty string. 
+
+* If you want to host feeds for each user or for Likes, set flUserFeeds and flLikesFeeds true.
 
 ### Run the app
 
