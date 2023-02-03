@@ -60,9 +60,9 @@ The server software is layered as a stack of Node packages that build on each ot
 
 I can't accept pull requests because I edit the code in an outliner, that's <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/sourceopml.md">what source.opml is all about</a>. 
 
-So the best thing to do when you spot a mistake is flag it as an issue in the repo, point to the code in question if that's helpful, and I'll thank you and make the fix myself.
+So the best thing to do when you spot a mistake is flag it as an <a href="https://github.com/scripting/feedlandInstall/issues">issue</a> in the repo, point to the code in question if that's helpful, and I'll thank you and make the fix myself.
 
-And if you want to add a feature and have it included in this distribution, post an issue and let's talk about it. ;-)
+And if you want to add a feature and have it included in this distribution, post an <a href="https://github.com/scripting/feedlandInstall/issues">issue</a> and let's talk about it. ;-)
 
 ### Questions, support
 
