@@ -134,3 +134,19 @@ An example, if your value for myDomain is "hello.com", this his how you would de
 
 Default: http://mydomain.com/
 
+### urlServerForEmail
+
+The URL of the server we'll use in emails. It's required if you're using email identity. 
+
+Default: undefined.
+
+### flUseTwitterIdentity
+
+If you want to use Twitter for identity instead of email, set this true. 
+
+"flUseTwitterIdentity": true
+
+If it's true you also need to specify <i>twitterConsumerKey</i> and <i>twitterConsumerKeySecret</i> in config.json, which you can get from the Twitter developer system. 
+
+Default: false
+

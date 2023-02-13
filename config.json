@@ -1,7 +1,9 @@
 {
 	"port": 1452,
+	
 	"flWebsocketEnabled": true,
 	"websocketPort": 1462,
+	"urlWebsocketServerForClient": "ws://mydomain.com:1462/",
 	
 	"myDomain": "mydomain.com",
 	
@@ -13,6 +15,7 @@
 	"mailSender": "bullmancuso@thefamily.org",
 	"confirmEmailSubject": "FeedLand confirmation",
 	"confirmationExpiresAfter": 3600,
+	"urlServerForEmail": "http://mydomain.com/",
 	
 	"database": {
 		"host": "mydatabaseprovider.com",
