@@ -150,3 +150,13 @@ If it's true you also need to specify <i>twitterConsumerKey</i> and <i>twitterCo
 
 Default: false
 
+### flUseS3ForStorage, s3PathForStorage
+
+You can use S3 storage instead of local file system storage, by setting <i>flUseS3ForStorage</i> true in config.json. 
+
+Then <i>s3PathForStorage</i> is the path on S3 that FeedLand should use for storage. As with the file system, there will be publicFiles nad privateFiles sub-directories.
+
+The publicFiles content can be accessed over the web the same way they would if they were stored locally on the FeedLand server machine. 
+
+The default for <i>flUseS3ForStorage</i> is false.
+
