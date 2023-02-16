@@ -160,3 +160,5 @@ The publicFiles content can be accessed over the web the same way they would if 
 
 The default for <i>flUseS3ForStorage</i> is false.
 
+Here are <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/s3storage.md">some tips</a> for setting things up on the Amazon side of this. 
+
