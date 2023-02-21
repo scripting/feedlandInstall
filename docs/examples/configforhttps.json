@@ -1,23 +1,19 @@
 {
-	"whatIsThis": "A simple example config.json file for a FeedLand installation, with none of the extra features turned on.",
+	"whatIsThis": "An example config.json file for a FeedLand installation running under HTTPS, with news products and special feeds enabled.",
 	
 	"port": 1452,
 	
 	"flWebsocketEnabled": true,
 	"websocketPort": 1462,
-	"urlWebsocketServerForClient": "ws://mydomain.com:1462/",
+	"urlWebsocketServerForClient": "wss://myfeedland.bullhome.com/",
 	
-	"myDomain": "mydomain.com",
+	"myDomain": "myfeedland.bullhome.com",
 	
-	"smtpHost": "smtp.mailhost.com",
-	"smtpPort": 587,
-	"smtpUsername": "bullman",
-	"smtpPassword": "getoutahere",
+	"mailSender": "bullmancuso@bullhome.com",
+	"confirmEmailSubject": "bull's feedland confirmation",
 	
-	"mailSender": "bullmancuso@thefamily.org",
-	"confirmEmailSubject": "FeedLand confirmation",
-	"confirmationExpiresAfter": 3600,
-	"urlServerForEmail": "http://mydomain.com/",
+	"urlServerForEmail": "https://myfeedland.bullhome.com/",
+	"urlServerForClient": "https://myfeedland.bullhome.com/",
 	
 	"database": {
 		"host": "mydatabaseprovider.com",
@@ -36,14 +32,14 @@
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,
 	
-	"flNewsProducts": false,
-	"flUserFeeds": false,
-	"flLikesFeeds": false,
+	"flNewsProducts": true,
+	"flUserFeeds": true,
+	"flLikesFeeds": true,
 	
-	"urlForFeeds": "http://data.mydomain.com/feeds/",
-	"s3PathForFeeds": "/data.mydomain.com/feeds/",
-	"s3LikesPath": "/data.mydomain.com/likes/", 
-	"urlNewsProducts": "http://newsproducts.mydomain.com",
+	"urlForFeeds": "https://s3.amazonaws.com/bullman/feedland/userfeeds/",
+	"s3PathForFeeds": "/bullman/feedland/userfeeds/",
+	"s3LikesPath": "/bullman/feedland/likes/",
+	"urlNewsProducts": "https://newsprod.bullhome.com/",
 	
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,

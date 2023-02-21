@@ -132,3 +132,9 @@ Change into the directory containing feedland.js.
 
 Quit and restart the server.
 
+### Other docs
+
+If you're using HTTPS, Scott Hanson has written a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/https.md">guide</a> to setting up HTTPS with FeedLand. 
+
+There's a special example config.json from a working HTTPS installation. 
+
