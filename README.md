@@ -56,6 +56,12 @@ The server software is layered as a stack of Node packages that build on each ot
 
 * <a href="https://github.com/scripting/s3">daves3</a> -- reading and writing to and from Amazon S3.
 
+### HTTPS
+
+If you're using HTTPS, Scott Hanson has written a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/https.md">guide</a> to setting up FeedLand with HTTPS. 
+
+There's a special <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/examples/configforhttps.json">example config.json</a> derived from a working HTTPS installation. 
+
 ### No pull requests, please
 
 I can't accept pull requests because I edit the code in an outliner, that's <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/sourceopml.md">what source.opml is all about</a>. 
