@@ -1,3 +1,7 @@
+#### 3/20/23; 12:20:36 PM by DW
+
+Added urlFeedlandApp to both example config.json files.
+
 #### 1/30/23; 1:09:27 PM by DW
 
 Documented new config.json value urlServerForClient.

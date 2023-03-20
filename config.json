@@ -8,6 +8,7 @@
 	"urlWebsocketServerForClient": "ws://mydomain.com:1462/",
 	
 	"myDomain": "mydomain.com",
+	"urlFeedlandApp": "http://mydomain.com/",
 	
 	"smtpHost": "smtp.mailhost.com",
 	"smtpPort": 587,

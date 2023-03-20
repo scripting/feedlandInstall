@@ -8,6 +8,7 @@
 	"urlWebsocketServerForClient": "wss://myfeedland.bullhome.com/",
 	
 	"myDomain": "myfeedland.bullhome.com",
+	"urlFeedlandApp": "https://myfeedland.bullhome.com/",
 	
 	"mailSender": "bullmancuso@bullhome.com",
 	"confirmEmailSubject": "bull's feedland confirmation",
