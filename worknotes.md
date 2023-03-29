@@ -1,3 +1,7 @@
+#### 3/29/23; 9:44:01 AM by DW
+
+Add flNightlyBackup to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md">config.md</a> docs page. 
+
 #### 3/20/23; 12:20:36 PM by DW
 
 Added urlFeedlandApp to both example config.json files.
