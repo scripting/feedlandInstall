@@ -1,3 +1,7 @@
+#### 4/24/23 by DW
+
+Site is made public in this <a href="http://scripting.com/2023/04/24/151114.html">Scripting News post</a>. 
+
 #### 3/29/23; 9:44:01 AM by DW
 
 Add flNightlyBackup to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md">config.md</a> docs page. 
