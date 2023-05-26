@@ -1,3 +1,17 @@
+#### 5/26/23 by DW
+
+New version, gets the updated prefs system in the database. 
+
+No feature in FeedLand that's waiting for this feature, I added it for another project I'm working on, one which makes it possible to build apps on FeedLand as a platform. 
+
+When you want to install the new version:
+
+1. <i>npm update</i> the feedland.js app.
+
+2. In MySQL, run this command: <i>alter table users add apps json;</i>
+
+3. Relaunch feedland.js. 
+
 #### 4/24/23 by DW
 
 Site is publicly announced in this <a href="http://scripting.com/2023/04/24/151114.html">Scripting News post</a>. 

@@ -94,6 +94,8 @@ create table users (
 	emailAddress text,
 	emailSecret text,
 	
+	apps json,
+	
 	primary key (screenname)
 	);
 
