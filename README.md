@@ -2,14 +2,6 @@
 
 Instructions for setting up a FeedLand server.
 
-### Private testing and bug fixing
-
-We have started testing the install process for FeedLand server as of January 24, 2023. 
-
-If you have access to this site, you can try installing from the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.md">instructions</a>. Report any problems as <a href="https://github.com/scripting/feedlandInstall/issues">issues</a> in this repo. 
-
-And here's the <a href="http://roadmap.feedland.org/">roadmap</a> for this release. 
-
 ### About FeedLand
 
 I've been running a FeedLand server myself since October 2022. 
