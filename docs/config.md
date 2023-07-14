@@ -168,3 +168,9 @@ If true we backup the database at midnight local time to the data sub-folder of 
 
 The default value for flNightlyBackup is false.
 
+### maxGetAllUsers
+
+The number of users who are returned when database.getAllUsers is called, and for the <a href="https://feedland.org/?userslist">Recent Users</a> command in the feedlandHome app.
+
+The default value for maxGetAllUsers is 100.
+
