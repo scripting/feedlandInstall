@@ -14,17 +14,15 @@ If you're running a single-instance FeedLand , the defaults are set so that it c
 
 3. cd into the directory containing feedland.js and npm install.
 
-<code>npm install</code>
-
 Of course you need to reboot FeedLand to reflect the new setup. 
-
-To test, sign off and sign back on. Try creating a new account. Please report any problems in this thread. 
 
 I have also updated the docs to reflect this new feature.
 
 Previously confirmations expired after one hour by default. I changed the default to 24 hours. There were complaints that they expired too quickly. It's hard for me to understand what causes the delay, but let's give them a bit more grace. You can of course change this setting.
 
 <code>confirmationExpiresAfter: 60 * 60 * 24,</code>
+
+To test, sign off and sign back on. Create a new account. Please report any problems <a href="https://github.com/scripting/feedlandInstall/issues/37">in this thread</a>. 
 
 #### 5/26/23 by DW
 
