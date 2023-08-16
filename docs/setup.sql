@@ -107,6 +107,17 @@ create table likes (
 	primary key (listName, itemId)
 	);
 
+create table pendingConfirmations (
+	magicString varchar (25),
+	email text,
+	flDeleted boolean, 
+	screenname text,
+	flNewUser boolean,
+	urlRedirect text,
+	whenCreated datetime,
+	primary key (magicString)
+	);
+
 create index itemFeed on items(feedUrl);
 create index itemPubDate on items(pubDate);
 create index subscriptionsListname on subscriptions(listname);

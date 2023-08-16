@@ -1,6 +1,6 @@
 #### 8/16/23; 5:15:49 AM by DW
 
-Previous versions saved pending confirmations in memory and on disk in stats.json. They expired after one hour. This worked fine where there is one instance of feedland.js, but now we're scaling up so there can be many instances, all working on the same data. This means we have to have the option to store pending confirmations in the database so all instances can work off the same data. 
+Previous versions saved pending confirmations in memory and on disk in stats.json. This worked fine where there is one instance of feedland.js, but now we're scaling up so there can be many instances, all working on the same data. This means we have to have the option to store pending confirmations in the database so all instances can work off the same data. 
 
 If you're running a single-instance FeedLand , the defaults are set so that it continues to operate as before. If you want to update to use the database as storage for pending confirmations, this is what you have to do.
 
@@ -12,9 +12,19 @@ If you're running a single-instance FeedLand , the defaults are set so that it c
 
 ```SQLcreate table pendingConfirmations (	magicString varchar (25),	email text,	flDeleted boolean, 	screenname text,	flNewUser boolean,	urlRedirect text,	whenCreated datetime,	primary key (magicString)	);```
 
-Of course you need to reboot FeedLand to reflect the new setup. To test the new setup, in feedlandHome, try signing off and sign back on. It should work. Try creating a new account. Please report any problems as an issue. 
+3. cd into the directory containing feedland.js and npm install.
+
+<code>npm install</code>
+
+Of course you need to reboot FeedLand to reflect the new setup. 
+
+To test, sign off and sign back on. Try creating a new account. Please report any problems in this thread. 
 
 I have also updated the docs to reflect this new feature.
+
+Previously confirmations expired after one hour by default. I changed the default to 24 hours. There were complaints that they expired too quickly. It's hard for me to understand what causes the delay, but let's give them a bit more grace. You can of course change this setting.
+
+<code>confirmationExpiresAfter: 60 * 60 * 24,</code>
 
 #### 5/26/23 by DW
 
