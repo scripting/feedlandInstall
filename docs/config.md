@@ -64,7 +64,7 @@ The number of seconds between checking for feed updates in the background. It ch
 
 Default: 15.
 
-### mailSender, confirmEmailSubject, confirmationExpiresAfter
+### mailSender, confirmEmailSubject, confirmationExpiresAfter, flUseDatabaseForConfirmations
 
 These values determine how confirmatioin emails are sent.
 
@@ -72,7 +72,9 @@ mailSender is the email address of the sender of the emails.
 
 confirmEmailSubject is the subject for confirmation emails.
 
-confirmationExpiresAfter is the number of seconds after which email confirmations expire. 3600, the default, is one hour. 
+confirmationExpiresAfter is the number of seconds after which email confirmations expire. 86400, the default, is 24 hours. 
+
+flUseDatabaseForConfirmations determines whether we store the pending confirmations in memory or in the database. If you're starting a new installation, you should set this true. It defaults to false, to preserve previous behavior.
 
 ### urlNewsProducts
 

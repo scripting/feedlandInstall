@@ -17,8 +17,9 @@
 	
 	"mailSender": "bullmancuso@thefamily.org",
 	"confirmEmailSubject": "FeedLand confirmation",
-	"confirmationExpiresAfter": 3600,
+	"confirmationExpiresAfter": 86400,
 	"urlServerForEmail": "http://mydomain.com/",
+	"flUseDatabaseForConfirmations": true,
 	
 	"database": {
 		"host": "mydatabaseprovider.com",
