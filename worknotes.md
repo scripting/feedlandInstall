@@ -1,3 +1,21 @@
+#### 8/16/23; 5:15:49 AM by DW
+
+Previous versions saved pending confirmations in memory and on disk in stats.json. They expired after one hour. This worked fine where there is one instance of feedland.js, but now we're scaling up so there can be many instances, all working on the same data. This means we have to have the option to store pending confirmations in the database so all instances can work off the same data. 
+
+If you're running a single-instance FeedLand , the defaults are set so that it continues to operate as before. If you want to update to use the database as storage for pending confirmations, this is what you have to do.
+
+1. In config.json, add a new setting, flUseDatabaseForConfirmations set to true.
+
+<code>flUseDatabaseForConfirmations: true,</code>
+
+2. In your database, create a new table called pendingConfirmations.
+
+```SQLcreate table pendingConfirmations (	magicString varchar (25),	email text,	flDeleted boolean, 	screenname text,	flNewUser boolean,	urlRedirect text,	whenCreated datetime,	primary key (magicString)	);```
+
+Of course you need to reboot FeedLand to reflect the new setup. To test the new setup, in feedlandHome, try signing off and sign back on. It should work. Try creating a new account. Please report any problems as an issue. 
+
+I have also updated the docs to reflect this new feature.
+
 #### 5/26/23 by DW
 
 New version, gets the updated prefs system in the database. 
