@@ -1,3 +1,7 @@
+#### 9/13/23; 10:21:36 AM by DW
+
+Two new config values, flUseRiverCache, ctSecsLifeRiverCache.
+
 #### 8/16/23; 5:15:49 AM by DW
 
 Previous versions saved pending confirmations in memory and on disk in stats.json. This worked fine where there is one instance of feedland.js, but now we're scaling up so there can be many instances, all working on the same data. This means we have to have the option to store pending confirmations in the database so all instances can work off the same data. 

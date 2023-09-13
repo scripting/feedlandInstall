@@ -58,6 +58,9 @@
 	
 	"urlServerHomePageSource": "http://scripting.com/code/feedland/home/index.html",
 	
+	"flUseRiverCache": true,
+	"ctSecsLifeRiverCache": 300,
+	
 	"githubBackup": {
 		"enabled": false,
 		"username": "mygithubaccount",

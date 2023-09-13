@@ -176,3 +176,13 @@ The number of users who are returned when database.getAllUsers is called, and fo
 
 The default value for maxGetAllUsers is 100.
 
+### flUseRiverCache, ctSecsLifeRiverCache
+
+FeedLand can cache rivers so that every time one is requested, if nothing has changed in the feeds it contains, it can save doing a database rebuild for that river. 
+
+We also age-out cache elements, so they to rebuild every so often even if none of the feeds they contain have updated. 
+
+The default value of flUseRiverCache is true. 
+
+The default value of ctSecsLifeRiverCache is 300 (five minutes). 
+
