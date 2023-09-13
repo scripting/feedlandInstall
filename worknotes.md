@@ -2,6 +2,8 @@
 
 Two new config values, flUseRiverCache, ctSecsLifeRiverCache.
 
+Added to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md#fluserivercache-ctsecsliferivercache">config.md page</a> and <a href="https://github.com/scripting/feedlandInstall/blob/main/config.json#L61">config.json example</a>. 
+
 #### 8/16/23; 5:15:49 AM by DW
 
 Previous versions saved pending confirmations in memory and on disk in stats.json. This worked fine where there is one instance of feedland.js, but now we're scaling up so there can be many instances, all working on the same data. This means we have to have the option to store pending confirmations in the database so all instances can work off the same data. 
