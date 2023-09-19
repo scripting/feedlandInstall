@@ -1,3 +1,7 @@
+9/19/23; 11:30:14 AM by DW
+
+Documented flRenewSubscriptions. It's been there since 10/29/22. There are times you want it off, esp when running behind a firewall, you're asking to renew but you won't pass the test. It accomplishes nothing in that case but wasting resources. 
+
 #### 9/13/23; 10:21:36 AM by DW
 
 Two new config values, flUseRiverCache, ctSecsLifeRiverCache.

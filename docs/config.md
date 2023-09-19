@@ -186,3 +186,11 @@ The default value of flUseRiverCache is true.
 
 The default value of ctSecsLifeRiverCache is 300 (five minutes). 
 
+### flRenewSubscriptions
+
+If true, we renew rssCloud subscriptions every 24 hours. 
+
+If you're running behind a firewall, you should turn this off, the subscription renewal will fail. 
+
+The default value is true.
+
