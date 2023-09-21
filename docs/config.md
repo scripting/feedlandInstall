@@ -194,3 +194,11 @@ If you're running behind a firewall, you should turn this off, the subscription 
 
 The default value is true.
 
+### flStaticFilesInSql
+
+If true, FeedLand will store static files in an SQL table instead of the local filesystem or S3.
+
+This setting overrides the other storage-related config settings such as flUseS3ForStorage and s3PathForStorage or publicFilesPath. In other words even if you have it set up to save to S3, we will save to the local table if flStaticFilesInSql is true. It's set up this way so migration from S3 or local files to the database is automatic, if it can't find a file in the table, it'll try to find it in the other storage location, if so it returns that. 
+
+The default value is false.
+

@@ -1,4 +1,14 @@
-9/19/23; 11:30:14 AM by DW
+#### 9/21/23; 9:33:02 AM by DW
+
+Documented new <i>staticfiles in sql</i> feature. 
+
+1. config.flStaticFilesInSql
+
+2. SQL code to create the new staticfiles table. 
+
+3. <a href="https://github.com/scripting/feedlandInstall/issues/39">Instructions</a> for getting started, with a place to ask questions. 
+
+#### 9/19/23; 11:30:14 AM by DW
 
 Documented flRenewSubscriptions. It's been there since 10/29/22. There are times you want it off, esp when running behind a firewall, you're asking to renew but you won't pass the test. It accomplishes nothing in that case but wasting resources. 
 

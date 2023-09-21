@@ -118,6 +118,18 @@ create table pendingConfirmations (
 	primary key (magicString)
 	);
 
+create table staticfiles (
+	screenname  varchar (255), 
+	relpath varchar (255), 
+	type varchar (64),
+	filecontents text,
+	flprivate boolean,
+	whenCreated datetime, 
+	whenUpdated datetime, 
+	ctSaves int default 0,
+	primary key (screenname, relpath, flprivate)
+	);
+
 create index itemFeed on items(feedUrl);
 create index itemPubDate on items(pubDate);
 create index subscriptionsListname on subscriptions(listname);
