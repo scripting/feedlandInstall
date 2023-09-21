@@ -118,10 +118,6 @@ You should then create an account for yourself using the signup process, <a href
 
 Any time you want to change what's in the emails FeedLand sends on your behalf, just edit the text of this file.
 
-### Optionally, install newsProductServer app
-
-See the instructions in the <a href="https://github.com/scripting/newsProductServer">newsProductServer</a> repo.
-
 ### Getting updates
 
 This is how to install new versions of the FeedLand software.

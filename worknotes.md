@@ -2,11 +2,13 @@
 
 Documented new <i>staticfiles in sql</i> feature. 
 
-1. config.flStaticFilesInSql
+1. <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md#flstaticfilesinsql">config.flStaticFilesInSql</a>
 
-2. SQL code to create the new staticfiles table. 
+2. <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql#L121">SQL code</a> to create the new staticfiles table. 
 
 3. <a href="https://github.com/scripting/feedlandInstall/issues/39">Instructions</a> for getting started, with a place to ask questions. 
+
+Removed setup instruction for News Product server config. The feature is built into FeedLand now, no need to install a separate app.
 
 #### 9/19/23; 11:30:14 AM by DW
 
