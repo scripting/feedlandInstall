@@ -220,3 +220,15 @@ If <i>flUseSqlForSockets</i> is true in addition to sending websocket messages w
 
 Default values are false and 5.
 
+### flWriteRssFilesLocally, localRssPath
+
+<i>New feature, 9/27/23.</i>
+
+If <i>flWriteRssFilesLocally</i> is true, when we write an RSS file, in addition to saving it to a public place we also save it to the system's local disk.
+
+<i>localRssPath</i> is the path we save it to. This feature has been there since the software was first written, it served as a debugging aid, but there was no way to control the feature, so we added the boolean so you could turn the feature off on systems that don't have local filesystems. 
+
+flWriteRssFilesLocally defaults true for backward compatibility.
+
+localRssPath defaults to "data/feeds/".
+
