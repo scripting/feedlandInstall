@@ -202,3 +202,21 @@ This setting overrides the other storage-related config settings such as flUseS3
 
 The default value is false.
 
+### logMinSecs, logMaxResults
+
+<i>New feature, 9/27/23.</i>
+
+FeedLand will log info about SQL queries that take longer than <i>logMinSecs</i> seconds or return more than <i>logMaxResults</i> results. 
+
+Default values are 5 and 1000.
+
+### flUseSqlForSockets, minSecsBetwSqlSocketChecks
+
+<i>New feature, 9/27/23.</i>
+
+If flUseSqlForSockets is true in addition to sending websocket messages when we find a new feed item, either through scanning or receiving and rssCloud ping, we periodically do an SQL query for new elements in the items table. You would set this true if you're running FeedLand in a multiple-instance environment. 
+
+minSecsBetwSqlSocketChecks determines how often FeedLand will do the SQL query if flUseSqlForSockets is true.
+
+Default values are false and 5.
+
