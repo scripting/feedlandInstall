@@ -1,3 +1,7 @@
+#### 10/3/23; 3:57:17 PM by DW
+
+Added two index creation commands to the end of <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>. These had been added manually to feedland.org, but not documented here. They improve performance for rivers of lots of feeds like my <i>All</i> category.
+
 #### 9/21/23; 9:33:02 AM by DW
 
 Documented new <i>staticfiles in sql</i> feature. 

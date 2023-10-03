@@ -133,3 +133,5 @@ create table staticfiles (
 create index itemFeed on items(feedUrl);
 create index itemPubDate on items(pubDate);
 create index subscriptionsListname on subscriptions(listname);
+create index itemDeleted on items(flDeleted);
+create index subscriptionsFeedUrl subscriptions(feedUrl);
