@@ -62,11 +62,12 @@ create table items (
 	);
 
 create table subscriptions (
-	listName varchar (255), 
+	listName varchar (64), 
 	feedUrl varchar (512), 
 	categories varchar (512), 
 	whenUpdated datetime, 
-	primary key (feedUrl, listname)
+	urlReadingList varchar (256) default null,
+	primary key (feedUrl, listName, urlReadingList)
 	);
 
 create table users (
@@ -128,6 +129,26 @@ create table staticfiles (
 	whenUpdated datetime, 
 	ctSaves int default 0,
 	primary key (screenname, relpath, flprivate)
+	);
+
+create table readinglists (
+	opmlUrl varchar (512), 
+	title text,
+	description text,
+	id int auto_increment, 
+	whenCreated datetime,
+	whenChecked datetime,
+	ctChecks int default 0,
+	whoFirstSubscribed text,
+	feedUrls json,
+	primary key (opmlUrl),
+	unique (id)
+	);
+create table readinglistsubscriptions (
+	opmlUrl varchar (512), 
+	screenname  varchar (255), 
+	whenCreated datetime, 
+	primary key (opmlUrl, screenname)
 	);
 
 create index itemFeed on items(feedUrl);
