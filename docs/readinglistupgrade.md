@@ -1,8 +1,10 @@
-# Reading list upgrade
+# Reading Lists upgrade
 
 If you have a FeedLand installation prior to v0.6.0, released on October 14, 2023, you'll need to make some changes to the database before installing the new software. 
 
 There are changes to the subscriptions table, and two new tables, readinglists and readinglistsubscriptions.
+
+The new software supports Reading Lists, user-level docs to come.
 
 ### Notes on <i>subscriptions</i> table changes
 
