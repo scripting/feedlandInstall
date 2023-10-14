@@ -144,6 +144,7 @@ create table readinglists (
 	primary key (opmlUrl),
 	unique (id)
 	);
+
 create table readinglistsubscriptions (
 	opmlUrl varchar (256), 
 	screenname  varchar (64), 
