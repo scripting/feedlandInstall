@@ -2,6 +2,8 @@
 
 <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/readinglistupgrade.md">Instructions</a> to upgrade a FeedLand installation to support reading lists.
 
+Modified <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a> to include support for reading lists.
+
 #### 10/3/23; 3:57:17 PM by DW
 
 Added two index creation commands to the end of <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>. These had been added manually to feedland.org, but not documented here. They improve performance for rivers of lots of feeds like my <i>All</i> category.

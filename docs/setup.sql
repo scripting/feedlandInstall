@@ -63,10 +63,10 @@ create table items (
 
 create table subscriptions (
 	listName varchar (64), 
-	feedUrl varchar (512), 
+	feedUrl varchar (256), 
 	categories varchar (512), 
 	whenUpdated datetime, 
-	urlReadingList varchar (256) default null,
+	urlReadingList varchar (256) not null default '',
 	primary key (feedUrl, listName, urlReadingList)
 	);
 
@@ -132,7 +132,7 @@ create table staticfiles (
 	);
 
 create table readinglists (
-	opmlUrl varchar (512), 
+	opmlUrl varchar (256), 
 	title text,
 	description text,
 	id int auto_increment, 
@@ -145,8 +145,8 @@ create table readinglists (
 	unique (id)
 	);
 create table readinglistsubscriptions (
-	opmlUrl varchar (512), 
-	screenname  varchar (255), 
+	opmlUrl varchar (256), 
+	screenname  varchar (64), 
 	whenCreated datetime, 
 	primary key (opmlUrl, screenname)
 	);
