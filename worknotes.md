@@ -1,6 +1,6 @@
 #### 10/14/23; 11:12:38 AM by DW -- v0.6.0
 
-Instructions to upgrade a FeedLand installation to support reading lists.
+<a href="https://github.com/scripting/feedlandInstall/blob/main/docs/readinglistupgrade.md">Instructions</a> to upgrade a FeedLand installation to support reading lists.
 
 #### 10/3/23; 3:57:17 PM by DW
 
