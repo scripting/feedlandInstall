@@ -1,3 +1,9 @@
+10/17/23; 9:51:53 AM by DW
+
+Added new index in <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>. 
+
+`create index feedItemIndex on items(flDeleted, pubDate, feedUrl);`
+
 #### 10/14/23; 11:12:38 AM by DW -- v0.6.0
 
 <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/readinglistupgrade.md">Instructions</a> to upgrade a FeedLand installation to support reading lists.

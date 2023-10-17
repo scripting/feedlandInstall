@@ -157,3 +157,4 @@ create index itemPubDate on items(pubDate);
 create index subscriptionsListname on subscriptions(listname);
 create index itemDeleted on items(flDeleted);
 create index subscriptionsFeedUrl on subscriptions(feedUrl);
+create index feedItemIndex on items(flDeleted, pubDate, feedUrl);
