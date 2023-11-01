@@ -232,3 +232,11 @@ flWriteRssFilesLocally defaults true for backward compatibility.
 
 localRssPath defaults to "data/feeds/".
 
+### flAllowWordpressIdentity
+
+<i>New feature, 11/1/23.</i>
+
+If true, users can create accounts using their WordPress account. 
+
+The default value is true.
+

@@ -1,4 +1,12 @@
-10/17/23; 9:51:53 AM by DW
+#### 11/1/23; 11:05:17 AM by DW
+
+WordPress login. 
+
+I posted a quick howto at <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/wordpresslogin.md">wordpresslogin.md</a>. 
+
+If you want to turn it off, set config.flAllowWordpressIdentity false
+
+#### 10/17/23; 9:51:53 AM by DW
 
 Added new index in <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>. 
 
