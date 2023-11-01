@@ -14,25 +14,9 @@ The "Redirect URL" is essential and must be right or it won't work.
 
 That assumes your server is hosted on myfeedland.org.
 
-The 
-
 ### Add this to config.json
 
-```JSON
-
-"wordpress": {
-
-"clientId": 12345,
-
-"clientSecret": "1234567890123456789012345678901234567890123456789012345678901234",
-
-"urlRedirect": "https://myfeedland.org/callbackFromWordpress",
-
-"scope": "global"
-
-}
-
-```
+```JSON"wordpress": {	"clientId": 12345,	"clientSecret": "1234567890123456789012345678901234567890123456789012345678901234",	"urlRedirect": "https://myfeedland.org/callbackFromWordpress",	"scope": "global"	}```
 
 Obviously replace the values for clientId and clientSecret with the ones you got from the WordPress app page.
 
