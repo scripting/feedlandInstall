@@ -1,3 +1,7 @@
+#### 11/2/23; 9:39:07 AM by DW
+
+Provided an example for how the <i>apps</i> object works in <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/appscolumn.md">appscolumn.md</a>. 
+
 #### 11/1/23; 11:05:17 AM by DW
 
 WordPress login. 
