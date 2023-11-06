@@ -1,3 +1,13 @@
+#### 11/5/23; 5:01:57 PM by DW
+
+Supervisor Mode implemented. 
+
+New versions of feedland, feedlanddatabase, daveappserver, versions 0.6.15, 0.7.9, 0.7.10.
+
+New column in the user table -- <i>role</i> whose default value is "user", one other recognized value "admin".
+
+Notes for the update are at <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/userroles.md">userroles.md</a>. 
+
 #### 11/2/23; 9:39:07 AM by DW
 
 Provided an example for how the <i>apps</i> object works in <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/appscolumn.md">appscolumn.md</a>. 

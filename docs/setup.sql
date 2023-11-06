@@ -97,6 +97,8 @@ create table users (
 	
 	apps json,
 	
+	role varchar (32),
+	
 	primary key (screenname)
 	);
 
