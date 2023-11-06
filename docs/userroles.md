@@ -1,6 +1,8 @@
 # New <i>roles</i> column in the <i>user</i> table
 
-Defaults to <i>user</i> can be set to <i>admin</i> for people supporting other users on a FeedLand instance. 
+There's a new column in the users table called roles. 
+
+It defaults to user. If you change it to admin for a user, they will be able to "supervise" any other user on a FeedLand instance, for support and debugging. 
 
 ### How to upgrade
 
@@ -14,7 +16,7 @@ There is no user interface at this time for setting the value of a user's role, 
 
 ### Context
 
-This feature is used to implement Supervisor Mode, where an admin user can see the product from the point of view of another server, to help diagnose a support issue. 
+This feature is used to implement Supervisor Mode, where an admin user can see the product from the point of view of another user, to help diagnose a support issue. 
 
 It's patterened after a similar feature in WordPress.
 
