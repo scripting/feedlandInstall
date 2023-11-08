@@ -1,3 +1,7 @@
+#### 11/8/23; 3:43:27 PM by DW
+
+New versions of feedland, feedlanddatabase, <a href="https://github.com/scripting/reallysimple/tree/main/demos/feedhunter">feedhunter</a>, 0.6.16, 0.7.10, 0.4.1, respectively.
+
 #### 11/5/23; 5:01:57 PM by DW
 
 Supervisor Mode implemented. 
