@@ -20,3 +20,13 @@ That assumes your server is hosted on myfeedland.org.
 
 Obviously replace the values for clientId and clientSecret with the ones you got from the WordPress app page.
 
+### Making WordPress identity the default
+
+Set config.flWordPressIdentityDefault to true and restart. 
+
+The buttons on the logon page of your server will now link up to a WordPress identity. 
+
+There is a link in the email that you can click to sign up via email as before. 
+
+The commands in the System menu will be updated as well. 
+

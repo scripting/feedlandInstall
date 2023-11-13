@@ -1,3 +1,7 @@
+11/13/23; 11:42:10 AM by DW
+
+Making WordPress the default identity service.
+
 #### 11/8/23; 3:43:27 PM by DW
 
 New versions of feedland, feedlanddatabase, <a href="https://github.com/scripting/reallysimple/tree/main/demos/feedhunter">feedhunter</a>, 0.6.16, 0.7.10, 0.4.1, respectively.
