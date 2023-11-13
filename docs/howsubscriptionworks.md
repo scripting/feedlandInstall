@@ -1,8 +1,8 @@
 # How subscription works in FeedLand
 
-For each feed in the database, it keeps track of who first subscribed to the feed.Ê
+For each feed in the database, it keeps track of who first subscribed to the feed.
 
-When a user subscribes to a feed, first we check to see if it's in the database, if it is, we go ahead and subscribe the user.Ê
+When a user subscribes to a feed, first we check to see if it's in the database, if it is, we go ahead and subscribe the user.
 
 If the feed is not in the database, we run a query to see how many feeds the user is the first subscriber of. If that number is lower than the limit,Êconfig.maxNewFeedSubscriptions, we go ahead and subscribe.
 

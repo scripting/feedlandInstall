@@ -18,7 +18,7 @@ There is no user interface at this time for setting the value of a user's role, 
 
 This feature is used to implement Supervisor Mode, where an admin user can see the product from the point of view of another user, to help diagnose a support issue. 
 
-It's patterened after a similar feature in WordPress.
+It's patterned after a similar feature in WordPress.
 
 Docs for using Supervisor Mode will appear elsewhere. 
 

@@ -52,6 +52,16 @@ You will need to get the following information to add to the database section of
 
 * database: The name of the database that will hold FeedLand's info.
 
+If your MySQL server requires all traffic to be encrypted, add an "ssl" section to the database section of config.json.
+
+```JSON
+
+"ssl": {"rejectUnauthorized": true}
+
+```
+
+For more info and help, see <a href="https://github.com/scripting/feedlandInstall/issues/41">this thread</a> in the Issues section of this repo.
+
 ### Create your database
 
 Open a terminal window to connect to the MySQL database. 
