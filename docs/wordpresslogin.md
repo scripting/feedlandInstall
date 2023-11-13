@@ -28,5 +28,5 @@ The buttons on the logon page of your server will now link up to a WordPress ide
 
 There is a link in the <a href="https://imgs.scripting.com/2023/11/13/signondialog.png">instructions</a> that you can click to sign up via email as before. 
 
-The commands in the System menu will be updated as well. 
+The commands in the System menu have been updated as well. 
 
