@@ -1,6 +1,6 @@
-11/13/23; 11:42:10 AM by DW
+#### 11/13/23; 11:42:10 AM by DW
 
-Making WordPress the default identity service.
+Making WordPress <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/wordpresslogin.md#making-wordpress-identity-the-default">the default identity service</a>.
 
 #### 11/8/23; 3:43:27 PM by DW
 
