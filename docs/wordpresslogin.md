@@ -26,7 +26,7 @@ Set config.flWordPressIdentityDefault to true and restart.
 
 The buttons on the logon page of your server will now link up to a WordPress identity. 
 
-There is a link in the email that you can click to sign up via email as before. 
+There is a link in the <a href="https://imgs.scripting.com/2023/11/13/signondialog.png">instructions</a> that you can click to sign up via email as before. 
 
 The commands in the System menu will be updated as well. 
 
