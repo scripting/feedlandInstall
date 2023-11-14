@@ -1,3 +1,13 @@
+11/14/23; 9:24:15 AM by DW
+
+Added an index <a href="https://github.com/scripting/feedlandInstall/issues/41#issuecomment-1791143618">recommended</a> by Scott Hanson. 
+
+`create index itemGuidUrl on items(guid, feedUrl);`
+
+It took about four minutes to run on feeland.org. 
+
+Also added it to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql#L163">SQL code</a> used to initialize a fresh FeedLand. 
+
 #### 11/13/23; 11:42:10 AM by DW
 
 Making WordPress <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/wordpresslogin.md#making-wordpress-identity-the-default">the default identity service</a>.
