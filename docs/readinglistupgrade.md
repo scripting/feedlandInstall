@@ -14,7 +14,7 @@ This created problems for us, and possibly will for you. Some feedUrl's may not 
 
 ### Database changes
 
-```SQLalter table subscriptions modify listName varchar (64);alter table subscriptions modify feedUrl varchar (256);alter table subscriptions add urlReadingList varchar (256) not null default "";alter table subscriptions drop primary key;alter table subscriptions add primary key (feedUrl, listName, urlReadingList); create table readinglists (	opmlUrl varchar (256), 	title text,	description text,	id int auto_increment, 	whenCreated datetime,	whenChecked datetime,	ctChecks int default 0,	whoFirstSubscribed text,	feedUrls json,	primary key (opmlUrl),	unique (id)	);create table readinglistsubscriptions (	opmlUrl varchar (256), 	screenname  varchar (64), 	whenCreated datetime, 	primary key (opmlUrl, screenname)	);```
+```SQLalter table subscriptions modify listName varchar (64);alter table subscriptions modify feedUrl varchar (256);alter table subscriptions add urlReadingList varchar (256) not null default '';alter table subscriptions drop primary key;alter table subscriptions add primary key (feedUrl, listName, urlReadingList); create table readinglists (	opmlUrl varchar (256), 	title text,	description text,	id int auto_increment, 	whenCreated datetime,	whenChecked datetime,	ctChecks int default 0,	whoFirstSubscribed text,	feedUrls json,	primary key (opmlUrl),	unique (id)	);create table readinglistsubscriptions (	opmlUrl varchar (256), 	screenname  varchar (64), 	whenCreated datetime, 	primary key (opmlUrl, screenname)	);```
 
 ### Installing new software
 
