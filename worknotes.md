@@ -1,3 +1,9 @@
+#### 2/22/24; 1:40:39 PM by DW
+
+Created a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setups.sql">new version</a> of setup.sql that includes the indexes in the table creation code. 
+
+I will test it by creating a new instance before archiving the old version and replacing it with the new one. 
+
 #### 11/14/23; 9:24:15 AM by DW
 
 Added an index <a href="https://github.com/scripting/feedlandInstall/issues/41#issuecomment-1791143618">recommended</a> by Scott Hanson. 
