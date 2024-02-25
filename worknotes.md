@@ -20,13 +20,11 @@ I created a new version with this approach.
 
 6. It worked. Now new feeds are getting feedId values that increment with each new feed. 
 
-I then made the changes I made manually to the old version of setup.sql, and that's the new version. 
+7. I then made the changes I made manually to the old version of setup.sql, and that's the new version. 
 
-I deleted setup2.sql.
+8. I deleted setup2.sql.
 
-We now know that the code and spec for the database are in agreement, and hopefully they will never fall out of sync again. 
-
-This was some bad practice over here. Mea culpa. 
+9. We now know that the code and spec for the database are in agreement, and hopefully they will never fall out of sync again. This was some bad practice over here. Mea culpa. 
 
 #### 2/22/24; 1:40:39 PM by DW
 
