@@ -1,3 +1,33 @@
+#### 2/25/24; 9:30:54 AM by DW
+
+There were problems with the new version of setup.sql.
+
+I created a new version with this approach.
+
+1. Created a new feedland database setup using the original <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>.
+
+2. Ran the current version of feedland. 
+
+3. Fixed all the SQL errors because the new columns weren't defined. This required running four bits of code at the command line.
+
+```SQLALTER TABLE items ADD COLUMN feedId INT UNSIGNED NOT NULL DEFAULT 0;ALTER TABLE feeds ADD COLUMN feedId INT UNSIGNED NOT NULL DEFAULT 0;ALTER TABLE subscriptions ADD COLUMN feedId INT UNSIGNED NOT NULL DEFAULT 0;CREATE INDEX feedId ON items (feedId);```
+
+4. At that point feedland.js ran reasonably well. There was still one problem, all the feeds had feedId of 0. The feeds table needed to be rearranged a bit. 
+
+5. I ran this bit of code.
+
+```SQLALTER TABLE feeds ADD COLUMN feedId INT AUTO_INCREMENT PRIMARY KEY,ADD UNIQUE KEY (feedUrl);```
+
+6. It worked. Now new feeds are getting feedId values that increment with each new feed. 
+
+I then made the changes I made manually to the old version of setup.sql, and that's the new version. 
+
+I deleted setup2.sql.
+
+We now know that the code and spec for the database are in agreement, and hopefully they will never fall out of sync again. 
+
+This was some bad practice over here. Mea culpa. 
+
 #### 2/22/24; 1:40:39 PM by DW
 
 Created a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setups.sql">new version</a> of setup.sql that includes the indexes in the table creation code. 

@@ -3,13 +3,14 @@ create database feedland character set utf8mb4 collate utf8mb4_unicode_ci;
 use feedland;
 
 create table feeds (
-	feedUrl varchar (512), 
+	feedId int auto_increment primary key,
+	feedUrl varchar (512) unique,
 	title text, 
 	htmlUrl text, 
 	description text, 
-	whenCreated datetime,  -- when the database record was created
+	whenCreated datetime,
 	whenUpdated datetime, 
-	whoFirstSubscribed text, -- 7/20/22 by DW
+	whoFirstSubscribed text,
 	ctItems int default 0,
 	ctSubs int default 0,
 	ctSecs float,
@@ -37,12 +38,12 @@ create table feeds (
 	imageLink text,
 	imageWidth int default 0,
 	imageHeight int default 0,
-	imageDescription text,
-	primary key (feedUrl)
+	imageDescription text
 	);
 
 create table items (
 	feedUrl varchar (512), 
+	feedId int unsigned not null default 0,
 	guid varchar (255), 
 	title text, 
 	link text, 
@@ -58,12 +59,14 @@ create table items (
 	markdowntext longtext,
 	outlineJsontext text, 
 	ctLikes int default 0,
-	likes text
+	likes text,
+	index feedId (feedId)
 	);
 
 create table subscriptions (
 	listName varchar (64), 
 	feedUrl varchar (256), 
+	feedId int unsigned not null default 0,
 	categories varchar (512), 
 	whenUpdated datetime, 
 	urlReadingList varchar (256) not null default '',
