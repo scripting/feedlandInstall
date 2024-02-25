@@ -1,8 +1,8 @@
 #### 2/25/24; 9:30:54 AM by DW
 
-There were problems with the new version of setup.sql.
+TL;DR -- <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a> has been updated so it now creates a database that's compatible with the current version of the server software. If you need to convert an existing installation to the new software, you'll have to do what I did in the steps below, or you could export subscription lists and start over with a fresh database. 
 
-I created a new version with this approach.
+I punted on setup2.sql, instead approached it as an upgrade -- which I did step by step, as noted below.
 
 1. Created a new feedland database setup using the original <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a>.
 
