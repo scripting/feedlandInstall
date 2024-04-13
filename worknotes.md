@@ -2,7 +2,7 @@
 
 TL;DR -- <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a> has been updated so it now creates a database that's compatible with the current version of the server software. If you need to convert an existing installation to the new software, you'll have to do what I did in the steps below, or you could export subscription lists and start over with a fresh database. 
 
-See docs/feb2024transition.md for a step-by-step account of how to upgrade an existing installation.
+See this <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/feb2024transition.md">special docs page</a> for a step-by-step account of how to upgrade an existing installation.
 
 #### 2/22/24; 1:40:39 PM by DW
 
