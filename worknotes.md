@@ -1,3 +1,9 @@
+#### 5/27/24; 12:18:38 PM by DW
+
+New config settings, `membershipClosedHeadline` and `membershipClosedExplanation` can customize the default messages in the signon dialog in FeedLand. 
+
+They default to the previously hard-coded messages. 
+
 #### 2/25/24; 9:30:54 AM by DW
 
 TL;DR -- <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql">setup.sql</a> has been updated so it now creates a database that's compatible with the current version of the server software. If you need to convert an existing installation to the new software, you'll have to do what I did in the steps below, or you could export subscription lists and start over with a fresh database. 
