@@ -1,3 +1,7 @@
+#### 5/31/25; 6:23:17 PM by DW
+
+New config setting, legalTags, configures what HTML you allow to pass from a feed into the database. The default is to let through <p> and <br>.
+
 #### 5/27/24; 12:18:38 PM by DW
 
 New config settings, `membershipClosedHeadline` and `membershipClosedExplanation` can customize the default messages in the signon dialog in FeedLand. 

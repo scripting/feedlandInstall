@@ -240,3 +240,11 @@ If true, users can create accounts using their WordPress account.
 
 The default value is true.
 
+### legalTags
+
+<i>New feature, 5/31/25.</i>
+
+Configures what HTML you allow to pass from a feed into the database. The default is to allow &lt;p> and &lt;br>through.
+
+Here's an <a href="https://gist.github.com/scripting/9f96ad955e72c41c1eabb395ce7202b0">example</a> that sets the legalTags to the styles that WordLand supports.
+
