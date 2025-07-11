@@ -44,17 +44,11 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
    - Otherwise, manually add the three CNAME records SES provides to your DNS configuration.
 
-* Check SPF record
+* Check SPF record. In your domain's DNS, ensure there is a TXT record authorizing SES to send mail: `v=spf1 include:amazonses.com ~all`
 
-- In your domain's DNS, ensure there is a TXT record authorizing SES to send mail: `v=spf1 include:amazonses.com ~all`
+* Wait for verification. SES will automatically detect the DNS changes and mark your domain as verified.
 
-* Wait for verification  
-
-- SES will automatically detect the DNS changes and mark your domain as verified.
-
-* After completing these steps
-
-- You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
+* After completing these steps. You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
 
 Note from Dave, 7/11/25
 
