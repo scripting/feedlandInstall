@@ -84,11 +84,9 @@ The config values for S3 storage are: urlForFeeds, s3PathForFeeds, s3LikesPath.
 
 We use <a href="https://aws.amazon.com/ses/">SES</a> to send mail. At some point we will probably expand the options here.
 
-I'm not exactly sure how to do it. I did it myself once a few years ago, and it's worked without a hitch since then. 
+Here are some <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setupses.md#ses-sender-address-configuration-added-july-11-2025-by-dw-written-by-chatgpt">docs</a> that explain how to set up SES. 
 
-If someone wants to write docs on how to do this, I'd be happy to link them in here. 
-
-You will need to have a <a href="https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html">credentials.txt</a> to provide access info to the Amazon software. 
+Also, you will need to have a <a href="https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html">credentials.txt</a> to provide access info to the Amazon software. 
 
 ### Set up an SMTP mail server (optional)
 

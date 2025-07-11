@@ -20,7 +20,7 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
 * Please note that some of the specifics of these steps may vary depending on your specific use case and the email sending domain you are using. It's recommended to follow Amazon SES documentation for more detailed instructions.
 
-### SES sender address configuration (added July 11, 2025 by DW, written by ChatGPT)
+### SES sender address configuration (written by ChatGPT)
 
 * Choose a sender address
 
@@ -30,15 +30,13 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
 * Verify the sender
 
-   If sending from a single address:  
+* If sending from a single address:  
 
-   - Go to SES ’! Verified identities ’! "Create identity" ’! Email address ’! Enter and verify your address.
+   - Go to SES / Verified identities / "Create identity" / Email address / Enter and verify your address.
 
+* If sending from multiple addresses at a domain (recommended):  
 
-
-   If sending from multiple addresses at a domain (recommended):  
-
-   - Go to SES ’! Verified identities ’! "Create identity" ’! Domain ’! Enter your domain name.  
+   - Go to SES / Verified identities / "Create identity" / Domain / Enter your domain name.  
 
    - Enable Easy DKIM (2048-bit recommended).  
 
@@ -48,13 +46,25 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
 * Check SPF record
 
-   In your domain's DNS, ensure there is a TXT record authorizing SES to send mail: `v=spf1 include:amazonses.com ~all`
+* In your domain's DNS, ensure there is a TXT record authorizing SES to send mail: `v=spf1 include:amazonses.com ~all`
 
 * Wait for verification  
 
-   SES will automatically detect the DNS changes and mark your domain as verified.
+* SES will automatically detect the DNS changes and mark your domain as verified.
 
 * After completing these steps
 
-You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
+* You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
+
+Note from Dave, 7/11/25
+
+I've been setting up a new FeedLand server. Using email for login. This is where I hit a wall. 
+
+I was using dave.winer@gmail.com as the return address. You can't use gmail.com. 
+
+You have to use a domain you control, and then have to set it up with some special CNAMEs that tell Amazon that you authorized using those domains for this purpose. It basically links your domain to your SES account. 
+
+I added a link to the docs in setup page, so hopefully next time, I will not have to spend most of a day chasing down this problem! 
+
+Now I have to get the websockets working on the new FeedLand install. 
 
