@@ -22,13 +22,13 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
 ### SES sender address configuration (added July 11, 2025 by DW, written by ChatGPT)
 
-#### Choose a sender address
+* Choose a sender address
 
    Use an email address at a domain you own (e.g. `no-reply@yourdomain.com`).  
 
    Do not use `gmail.com` or other third-party addresses as the sender.
 
-#### Verify the sender
+* Verify the sender
 
    If sending from a single address:  
 
@@ -46,15 +46,15 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
    - Otherwise, manually add the three CNAME records SES provides to your DNS configuration.
 
-#### Check SPF record
+* Check SPF record
 
    In your domain's DNS, ensure there is a TXT record authorizing SES to send mail: `v=spf1 include:amazonses.com ~all`
 
-#### Wait for verification**  
+* Wait for verification  
 
    SES will automatically detect the DNS changes and mark your domain as verified.
 
-#### After completing these steps
+* After completing these steps
 
 You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
 
