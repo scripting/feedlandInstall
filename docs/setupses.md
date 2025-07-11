@@ -50,11 +50,11 @@ I asked <a href="https://chat.openai.com">chat.openai.com</a> to write this for 
 
 * After completing these steps. You can send mail using any address at your verified domain (e.g. `no-reply@yourdomain.com`) and mail will pass SPF and DKIM checks for improved deliverability.
 
-Note from Dave, 7/11/25
+### Note from Dave, 7/11/25
 
 I've been setting up a new FeedLand server. Using email for login. This is where I hit a wall. 
 
-I was using dave.winer@gmail.com as the return address. You can't use gmail.com. 
+I was using `dave.winer@gmail.com` as the return address. You can't use gmail.com. 
 
 You have to use a domain you control, and then have to set it up with some special CNAMEs that tell Amazon that you authorized using those domains for this purpose. It basically links your domain to your SES account. 
 
