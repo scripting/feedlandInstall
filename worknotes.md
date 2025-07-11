@@ -1,3 +1,7 @@
+#### 7/11/25; 10:54:07 AM by DW
+
+Added a new section to the SES docs explaining how to set up sender address configuration. 
+
 #### 5/31/25; 6:23:17 PM by DW
 
 New config setting, legalTags, configures what HTML you allow to pass from a feed into the database. The default is to let through <p> and <br>.
