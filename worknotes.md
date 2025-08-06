@@ -1,6 +1,6 @@
 8/6/25; 11:00:32 AM by DW
 
-Added docs for config.flUseMySql2.
+Added <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md#flusemysql2">docs</a> for config.flUseMySql2.
 
 #### 7/11/25; 10:54:07 AM by DW
 
