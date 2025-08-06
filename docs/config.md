@@ -240,6 +240,14 @@ If true, users can create accounts using their WordPress account.
 
 The default value is true.
 
+### flUseMySql2
+
+If true, FeedLand will use the mysql2 package. 
+
+It defaults false, which means it uses mysql.
+
+More info <a href="https://github.com/scripting/feedlandInstall/issues/67#issue-3297053654">here</a>. 
+
 ### legalTags
 
 <i>New feature, 5/31/25.</i>

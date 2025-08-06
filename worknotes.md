@@ -1,3 +1,7 @@
+8/6/25; 11:00:32 AM by DW
+
+Added docs for config.flUseMySql2.
+
 #### 7/11/25; 10:54:07 AM by DW
 
 Added a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setupses.md#ses-sender-address-configuration-added-july-11-2025-by-dw-written-by-chatgpt">new section</a> to the SES docs explaining how to set up sender address configuration. 
