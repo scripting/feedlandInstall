@@ -8,7 +8,7 @@ Added a <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/set
 
 #### 5/31/25; 6:23:17 PM by DW
 
-New config setting, legalTags, configures what HTML you allow to pass from a feed into the database. The default is to let through <p> and <br>.
+New config <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/config.md#legaltags">setting</a>, legalTags, configures what HTML you allow to pass from a feed into the database. The default is to let through &lt;p> and &lt;br>.
 
 #### 5/27/24; 12:18:38 PM by DW
 
