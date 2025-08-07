@@ -2,11 +2,11 @@
 
 Fixed a mistake in yesterday's update about where flUseMySql2 is. It's part of the database object in config.json. 
 
-I added it to the <a href="https://github.com/scripting/feedlandInstall/blob/main/config.json">starter config.json template</a>, with the value of false, which has been the default all along, and is the safest choice.
+I added it to the <a href="https://github.com/scripting/feedlandInstall/blob/main/config.json#L35">starter config.json template</a>, with the value of false, which has been the default all along, thus is the safest choice.
 
 Removed the note I added yesterday in the config.json docs, and included what it said here:
 
-* If config.database.flUseMySql2 is true, FeedLand will use the mysql2 package. 
+* If config.database.flUseMySql2 is true, FeedLand will use the <a href="https://www.npmjs.com/package/mysql2">mysql2</a> package. 
 
 There was a <a href="https://github.com/scripting/feedlandInstall/issues/67">discussion</a> of this in the Issues section, and it would be a good place to post a question or comment. 
 
