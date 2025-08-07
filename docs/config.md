@@ -248,13 +248,3 @@ Configures what HTML you allow to pass from a feed into the database. The defaul
 
 Here's an <a href="https://gist.github.com/scripting/9f96ad955e72c41c1eabb395ce7202b0">example</a> that sets the legalTags to the styles that WordLand supports.
 
-### flUseMySql2
-
-<i>Docs added 8/6/25.</i>
-
-If true, FeedLand will use the mysql2 package. 
-
-It defaults false, which means it uses mysql.
-
-More info <a href="https://github.com/scripting/feedlandInstall/issues/67#issue-3297053654">here</a>. 
-

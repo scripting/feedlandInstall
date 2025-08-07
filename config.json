@@ -31,7 +31,8 @@
 		"database": "feedland",
 		"debug": false,
 		"flLogQueries": false,
-		"flQueueAllRequests": false
+		"flQueueAllRequests": false,
+		"flUseMySql2": false
 		},
 	
 	"flUseTwitterIdentity": false,
