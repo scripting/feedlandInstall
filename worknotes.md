@@ -1,3 +1,7 @@
+#### 8/10/25; 9:12:39 AM by DW
+
+Changed the default of <a href="https://github.com/scripting/feedlandInstall/blob/main/config.json#L35">config.database.flUseMySql2</a> to true. Gave it some thought, listened to <a href="https://github.com/scripting/feedlandInstall/issues/67#issuecomment-3169306552">Chuck's opinion</a>, decided it was worth stepping into the future. It's been running with this package on feedland.com for over a year. 
+
 #### 8/7/25; 1:43:02 PM by DW
 
 Fixed a mistake in yesterday's update about where flUseMySql2 is. It's part of the database object in config.json. 
