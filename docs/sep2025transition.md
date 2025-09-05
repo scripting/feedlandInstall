@@ -24,11 +24,11 @@ alter table items add column metadata json not null default (json_object());
 
 #### Background
 
-<p>The reason this is a more difficult update is that we're adding a column to the `items` table, `metadata`, which is a JSON object. 
+<p>The reason this is a more difficult update is that we're adding a column to the <i>items</i> table, <i>metadata,</i> which is a JSON object. 
 
 <p>It will allow us to add new data to the database without having to go through this again. The rule is, we only put data here that passes through the feedlanddatabase level, data it doesn't need to do its stuff.
 
-<p>I'm doing this now because I want to keep two bits of information for every item -- `wpSiteId` and `wpPostId`. 
+<p>I'm doing this now because I want to keep two bits of information for every item -- <i>wpSiteId</i> and <i>wpPostId. </i>
 
 <p>These values are present for posts that emanate from a WordPress site. They are present in feeds from those sites. We also support this data in the feeds WordLand generates. 
 
