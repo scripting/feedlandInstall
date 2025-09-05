@@ -4,7 +4,7 @@ How to update your FeedLand to v0.7.0
 
 * at the MySQL command line
 
-``sql
+```sql
 
 alter table items add column metadata json not null default (json_object());
 
