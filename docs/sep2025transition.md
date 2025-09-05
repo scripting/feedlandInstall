@@ -2,7 +2,7 @@
 
 We add a new metadata column to the <i>items</i> table.
 
-### At the MySQL command line
+#### At the MySQL command line
 
 ```sql
 
@@ -10,11 +10,11 @@ alter table items add column metadata json not null default (json_object());
 
 ```
 
-### In the directory you run FeedLand from 
+#### In the directory you run FeedLand from 
 
 `npm update`
 
-### Notes
+#### Notes
 
 * Version numbers: feedland: v0.7.0, feedlanddatabase: v0.8.2, wpidentity: v0.5.25.
 
@@ -22,7 +22,7 @@ alter table items add column metadata json not null default (json_object());
 
 * If you're installing a fresh FeedLand just follow the usual instructions, it automatically creates an items table with a metadata column. (This should be tested too.)
 
-### Background
+#### Background
 
 <p>The reason this is a more difficult update is that we're adding a column to the `items` table, `metadata`, which is a JSON object. 
 
