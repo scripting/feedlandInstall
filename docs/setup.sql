@@ -60,6 +60,7 @@ create table items (
 	outlineJsontext text, 
 	ctLikes int default 0,
 	likes text,
+	metadata json not null default (json_object()),
 	index feedId (feedId)
 	);
 
