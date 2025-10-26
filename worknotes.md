@@ -1,3 +1,9 @@
+#### 10/26/25; 12:21:45 PM by DW
+
+New version of database software, reading news should be faster on systems with large <i>items</i> tables.
+
+The upgrade is <a href="https://github.com/scripting/feedlandInstall/issues/69">explained here</a>. Note that you have to create a new index. 
+
 #### 9/5/25; 9:44:10 AM by DW
 
 See this <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/sep2025transition.md">special docs page</a> for details on the new version of FeedLand, v0.8.0.
