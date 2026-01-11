@@ -1,3 +1,9 @@
+#### 1/11/26; 9:49:21 AM by DW
+
+New index added to the setup instructions and posted as a recommendation for previous FeedLand installs. 
+
+* `create index itemCreated on items (whenCreated);`
+
 #### 10/26/25; 12:21:45 PM by DW
 
 New version of database software, reading news should be faster on systems with large <i>items</i> tables.
