@@ -1,6 +1,6 @@
 #### 1/11/26; 9:49:21 AM by DW
 
-New index added to the setup instructions and posted as a recommendation for previous FeedLand installs. 
+New index added to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql#L169">setup instructions</a> and posted as a recommendation for previous FeedLand installs. 
 
 * `create index itemCreated on items (whenCreated);`
 
