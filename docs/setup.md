@@ -130,6 +130,8 @@ Any time you want to change what's in the emails FeedLand sends on your behalf, 
 
 This is how to install new versions of the FeedLand software.
 
+The instructions for a specific update may require you modify the database, adding new columns or tables, be sure to make those changes before doing anything else.
+
 Change into the directory containing feedland.js.
 
 `npm update`
