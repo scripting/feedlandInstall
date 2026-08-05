@@ -1,3 +1,9 @@
+#### 8/5/26; 3:42:16 PM by DW
+
+New feature, you can subscribe to reading lists with rssCloud as you would with a feed. As a result, you need to update your database as follows.
+
+```SQLalter table readinglistsadd urlCloudServer varchar (512) not null default '',add whenLastCloudRenew datetime not null default '1970-01-01 00:00:00',add ctCloudRenews int not null default 0;```
+
 #### 1/11/26; 9:49:21 AM by DW
 
 New index added to the <a href="https://github.com/scripting/feedlandInstall/blob/main/docs/setup.sql#L169">setup instructions</a> and posted as a recommendation for previous FeedLand installs. 

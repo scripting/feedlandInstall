@@ -147,6 +147,9 @@ create table readinglists (
 	ctChecks int default 0,
 	whoFirstSubscribed text,
 	feedUrls json,
+	urlCloudServer varchar (512) not null default '',
+	whenLastCloudRenew datetime not null default '1970-01-01 00:00:00',
+	ctCloudRenews int not null default 0,
 	primary key (opmlUrl),
 	unique (id)
 	);
